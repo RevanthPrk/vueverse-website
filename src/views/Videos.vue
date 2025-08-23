@@ -117,12 +117,12 @@ const formatDate = (dateString: string) => {
                 <div class="play-icon">
                   <a :href="video.video" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></a>
                 </div>
-                <span class="duration">{{ video.duration }}</span>
+                <!-- <span class="duration">{{ video.duration }}</span> -->
               </div>
             </div>
             <div class="video-info">
               <h3 class="video-title">{{ video.title }}</h3>
-              <p class="video-date">{{ formatDate(video.date) }}</p>
+              <!-- <p class="video-date">{{ formatDate(video.date) }}</p> -->
               <p class="video-description">{{ video.description }}</p>
               <a :href="video.video" target="_blank" class="watch-link">
                 {{ t('videos.watchOnYoutube') }}
