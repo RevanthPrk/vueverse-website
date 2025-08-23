@@ -54,14 +54,14 @@ const videos: Video[] = [
 ]
 
 // Format date for display
-const formatDate = (dateString: string) => {
-  const date = new Date(dateString)
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  }).format(date)
-}
+// const formatDate = (dateString: string) => {
+//   const date = new Date(dateString)
+//   return new Intl.DateTimeFormat('en-US', {
+//     year: 'numeric',
+//     month: 'long',
+//     day: 'numeric'
+//   }).format(date)
+// }
 </script>
 
 <template>
