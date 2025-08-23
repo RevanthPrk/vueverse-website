@@ -20,7 +20,7 @@ const partners: Partner[] = [
     logo: 'https://linktr.ee/og/image/AriqtInternational.jpg',
     description: t('partners.descriptions.thub'),
     type: 'Software Organization',
-    website: 'https://example.com'
+    website: 'https://www.ariqt.com/'
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const partners: Partner[] = [
     logo: 'https://media.licdn.com/dms/image/v2/D4E22AQHezAm9YpnOkA/feedshare-shrink_800/B4EZYBM4VfGgAg-/0/1743776877681?e=1758758400&v=beta&t=Bvp80rh6BnRg1V8dqX0mr7P753FocQucpNEcATbzcFY',
     description: t('partners.descriptions.techvista'),
     type: 'Software Organization',
-    website: 'https://example.com'
+    website: 'https://oneentry.cloud/paas'
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const partners: Partner[] = [
     logo: 'https://media.licdn.com/dms/image/v2/D4E0BAQHYNRjBKSqn-Q/company-logo_200_200/company-logo_200_200/0/1718639979394?e=1758758400&v=beta&t=CLKcijZzN-abu7wx_oCDJgH1j0yHoOc-Wz5-eSxOFXc',
     description: t('partners.descriptions.thub'),
     type: 'Community',
-    website: 'https://example.com'
+    website: 'https://jslovers.com/'
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const partners: Partner[] = [
     logo: 'https://media.licdn.com/dms/image/v2/D560BAQGyrX_NTRK3tA/company-logo_200_200/company-logo_200_200/0/1723487993653/chennaireact_logo?e=1758758400&v=beta&t=J0DHCLGYrNnEhUSR_i5jtktcO9yFi7BdEfotwfd_Cu8',
     description: t('partners.descriptions.techvista'),
     type: 'Community',
-    website: 'https://example.com'
+    website: 'https://www.linkedin.com/company/chennaireact/'
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const partners: Partner[] = [
     logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQFjiEoqun9lSg/company-logo_200_200/B4DZY9I1YUH4AM-/0/1744782448763/d3_community_logo?e=1758758400&v=beta&t=BxBrumg1e5sljCayeUmPWFtd8DoVJSZXXIvRNCq27Rg',
     description: t('partners.descriptions.techvista'),
     type: 'Community',
-    website: 'https://example.com'
+    website: 'https://www.linkedin.com/company/d3-community/'
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const partners: Partner[] = [
     logo: 'https://media.licdn.com/dms/image/v2/D560BAQFeo13AYITciA/company-logo_200_200/company-logo_200_200/0/1734769360538/codeonjvmchennai_logo?e=1758758400&v=beta&t=Oo-TGAiA026Ow3LeQe_ZL5X4cKmZcS38w62_6q91KtA',
     description: t('partners.descriptions.techvista'),
     type: 'Community',
-    website: 'https://example.com'
+    website: 'https://www.linkedin.com/company/codeonjvmchennai/'
   },
 ]
 
