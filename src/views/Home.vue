@@ -99,7 +99,7 @@ const events = [
           </div>
           <div class="about-image">
             <img
-              src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="../assets/images/vueverse.png"
               alt="VueVerse Hyderabad Community" />
           </div>
         </div>
@@ -387,6 +387,7 @@ const events = [
   img {
     width: 100%;
     border-radius: 8px;
+    object-fit: contain;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 
