@@ -157,7 +157,7 @@ export default {
   videos: {
     title: 'Videos',
     intro: 'Our Video Content',
-    description: 'Explore recordings from our past events, workshops, and tech talks. These videos provide valuable insights into Vue.js best practices, tutorials, and showcase our community activities.',
+    description: 'Explore youtube tutorials of Vue JS, recordings from our past events, workshops, and tech talks. These videos provide valuable insights into Vue.js best practices, tutorials, and showcase our community activities.',
     featured: 'Featured Video',
     allVideos: 'All Videos',
     watchOnYoutube: 'Watch on YouTube',

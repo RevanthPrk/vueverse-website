@@ -10,58 +10,47 @@ interface Video {
   thumbnail: string
   date: string
   duration: string
+  video: string
 }
 
 // Videos data (YouTube video IDs and custom data)
 const videos: Video[] = [
   {
     id: 'XqZsoesa55w',  // placeholder ID
-    title: 'Vue 3 Composition API Deep Dive',
-    description: 'An in-depth exploration of the Vue 3 Composition API and its benefits for managing complex component logic.',
-    thumbnail: 'https://images.pexels.com/photos/7709292/pexels-photo-7709292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Vue.js 3 Tutorial - For Beginners',
+    description: 'In this Vue 3 tutorial series for beginners we\'ll learn Vue.js (using version 3 - the latest major version) from the ground up & use it to make a couple of nice web projects - A Reaction timer & the beginning of a small, simple blog.',
+    thumbnail: 'https://i.ytimg.com/vi/YrxBCBibVo0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD9WLQm1NAoLvKJK3YiLFrmRl4qPw',
     date: '2025-06-15',
-    duration: '45:21'
+    duration: '45:21',
+    video: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9hp28dYyYBy3xoOdoeNw-hD'
   },
   {
     id: 'dQw4w9WgXcQ',  // placeholder ID
-    title: 'Building Reactive Forms with Vue',
-    description: 'Learn how to create dynamic, reactive forms in Vue with validation and advanced user interactions.',
-    thumbnail: 'https://images.pexels.com/photos/7709293/pexels-photo-7709293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Pinia Crash Course',
+    description: 'In this tutorial, you\'ll learn exactly learn what Pinia is (a state management solution for Vue) and how we\'d typically use it in a Vue application with a practical example.',
+    thumbnail: 'https://i.ytimg.com/vi/u0B9dysw29A/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCLuZ5SedYOGiwWtokMJyFP7XkWYw',
     date: '2025-05-28',
-    duration: '32:15'
+    duration: '32:15',
+    video: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9hp28dYyYBy3xoOdoeNw-hD'
   },
   {
     id: 'oHg5SJYRHA0',  // placeholder ID
-    title: 'Vue Performance Optimization Techniques',
-    description: 'Discover advanced strategies for optimizing the performance of your Vue applications.',
-    thumbnail: 'https://images.pexels.com/photos/7709294/pexels-photo-7709294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Vite & The future of JavaScript tooling',
+    description: 'At VoidZero, we are working on building the foundation for a unified toolchain for JavaScript. We have reworked everything inside Vite from the ground up, now running on a Rust-powered toolchain containing OXC and Rolldown.',
+    thumbnail: 'https://i3.ytimg.com/vi/cXiy8jtgfmM/maxresdefault.jpg',
     date: '2025-04-10',
-    duration: '38:42'
+    duration: '38:42',
+    video: 'https://www.youtube.com/watch?v=cXiy8jtgfmM'
   },
   {
     id: 'LLFys7v-l4c',  // placeholder ID
-    title: 'State Management with Pinia',
-    description: 'A comprehensive guide to using Pinia for state management in Vue applications.',
-    thumbnail: 'https://images.pexels.com/photos/7709295/pexels-photo-7709295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'State of Vite and Vue 2025 by Creator Evan You',
+    description: 'What is the State of Vue in 2025?Hear about Alien Signals, Devtools v7, Vapor Mode, Rolldown Vite, Vue Plus.',
+    thumbnail: 'https://i3.ytimg.com/vi/gOffFaYUxms/maxresdefault.jpg',
     date: '2025-03-22',
-    duration: '41:05'
+    duration: '41:05',
+    video: 'https://www.youtube.com/watch?v=gOffFaYUxms&t=1s'
   },
-  {
-    id: 'jNQXAC9IVRw',  // placeholder ID
-    title: 'VueVerse Launch Event Highlights',
-    description: 'Highlights from the inaugural VueVerse Hyderabad community launch event.',
-    thumbnail: 'https://images.pexels.com/photos/7709297/pexels-photo-7709297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    date: '2025-01-15',
-    duration: '15:30'
-  },
-  {
-    id: 'M7lc1UVf-VE',  // placeholder ID
-    title: 'Building a Vue Design System',
-    description: 'Learn how to create and implement a consistent design system in Vue applications.',
-    thumbnail: 'https://images.pexels.com/photos/7709298/pexels-photo-7709298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    date: '2025-02-05',
-    duration: '52:18'
-  }
 ]
 
 // Format date for display
@@ -100,17 +89,17 @@ const formatDate = (dateString: string) => {
           <div class="video-container">
             <img :src="videos[0].thumbnail" alt="Featured Video Thumbnail" class="video-placeholder" />
             <div class="play-button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <a :href="videos[0].video" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></a>
             </div>
           </div>
           <div class="featured-video-info">
             <h3>{{ videos[0].title }}</h3>
-            <p class="video-metadata">
+            <!-- <p class="video-metadata">
               <span class="video-date">{{ formatDate(videos[0].date) }}</span>
               <span class="video-duration">{{ videos[0].duration }}</span>
-            </p>
+            </p> -->
             <p class="video-description">{{ videos[0].description }}</p>
-            <a :href="`https://www.youtube.com/watch?v=${videos[0].id}`" target="_blank" class="btn btn-primary">
+            <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1" target="_blank" class="btn btn-primary">
               {{ t('videos.watchOnYoutube') }}
             </a>
           </div>
@@ -126,7 +115,7 @@ const formatDate = (dateString: string) => {
               <img :src="video.thumbnail" :alt="video.title">
               <div class="play-overlay">
                 <div class="play-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <a :href="video.video" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></a>
                 </div>
                 <span class="duration">{{ video.duration }}</span>
               </div>
@@ -135,14 +124,14 @@ const formatDate = (dateString: string) => {
               <h3 class="video-title">{{ video.title }}</h3>
               <p class="video-date">{{ formatDate(video.date) }}</p>
               <p class="video-description">{{ video.description }}</p>
-              <a :href="`https://www.youtube.com/watch?v=${video.id}`" target="_blank" class="watch-link">
+              <a :href="video.video" target="_blank" class="watch-link">
                 {{ t('videos.watchOnYoutube') }}
               </a>
             </div>
           </div>
         </div>
         <div class="text-center mt-4">
-          <a href="https://www.youtube.com/@VueVerse-hyderabad" target="_blank" class="btn btn-primary">
+          <a href="https://www.youtube.com/@VueVerse-hyderabad" target="_blank" class="btn btn-primary visit">
             {{ t('videos.visitChannel') }}
           </a>
         </div>
@@ -227,6 +216,11 @@ const formatDate = (dateString: string) => {
   svg {
     transform: translateX(3px);
   }
+}
+
+.visit {
+  background-color: #42b883;
+  color: white;
 }
 
 .featured-video-info {
@@ -384,7 +378,7 @@ const formatDate = (dateString: string) => {
   // Limit to 2 lines of text
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  // -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
