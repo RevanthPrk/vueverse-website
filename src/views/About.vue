@@ -39,7 +39,7 @@ const { t } = useI18n()
               with Vue.</p>
           </div>
           <div class="about-image">
-            <img src="https://images.pexels.com/photos/7688460/pexels-photo-7688460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="VueVerse Community" />
+            <img src="../assets/images/vueverse.png" alt="VueVerse Community" />
           </div>
         </div>
       </section>
