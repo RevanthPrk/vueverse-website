@@ -5,16 +5,16 @@ import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 
 const route = useRoute()
-const pageTitle = ref('VueVerse Hyderabad')
+const pageTitle = ref('VueVerse')
 
 watchEffect(() => {
   // Update page title based on route
   const routeName = route.name?.toString() || 'home'
   if (routeName === 'home') {
-    pageTitle.value = 'VueVerse Hyderabad - Developer Community'
+    pageTitle.value = 'VueVerse - Developer Community'
   } else {
     const name = routeName.charAt(0).toUpperCase() + routeName.slice(1)
-    pageTitle.value = `${name} | VueVerse Hyderabad`
+    pageTitle.value = `${name} | VueVerse`
   }
   document.title = pageTitle.value
 })
