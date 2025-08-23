@@ -64,10 +64,6 @@ const partners: Partner[] = [
   },
 ]
 
-const communities: Partner[] = [
-  
-]
-
 // Group partners by type
 const silverPartners = partners.filter(partner => partner.type === 'Software Organization')
 const communityPartners = partners.filter(partner => partner.type === 'Community')

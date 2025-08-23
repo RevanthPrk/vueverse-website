@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+// import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-const yearFounded = ref(2023)
-const currentYear = ref(new Date().getFullYear())
-const yearsActive = ref(currentYear.value - yearFounded.value + 1)
+// const yearFounded = ref(2023)
+// const currentYear = ref(new Date().getFullYear())
+// const yearsActive = ref(currentYear.value - yearFounded.value + 1)
 </script>
 
 <template>

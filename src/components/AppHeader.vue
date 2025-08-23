@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-import LanguageSwitch from './LanguageSwitch.vue'
-
-const { t } = useI18n()
+// import { useI18n } from 'vue-i18n'
+// import LanguageSwitch from './LanguageSwitch.vue'
+// 
+// const { t } = useI18n()
 const route = useRoute()
 const isMenuOpen = ref(false)
 const isScrolled = ref(false)

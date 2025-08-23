@@ -34,56 +34,56 @@ const events = ref([
 ])
 
 // Past events
-const pastEvents = ref([
-  {
-    id: 4,
-    title: 'VueVerse Launch Party',
-    date: '2025-01-15',
-    location: 'Hyderabad Central Library',
-    description: 'The inaugural event for VueVerse Hyderabad with community networking and talks.',
-    image: 'https://images.pexels.com/photos/2505056/pexels-photo-2505056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  },
-  {
-    id: 5,
-    title: 'Vue 3 Composition API Workshop',
-    date: '2025-02-20',
-    location: 'T-Hub Foundation',
-    description: 'Hands-on workshop covering the fundamentals of Vue 3\'s Composition API.',
-    image: 'https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  },
-  {
-    id: 6,
-    title: 'Vue DevTools: Debugging Masters',
-    date: '2025-03-12',
-    location: 'IIIT Hyderabad',
-    description: 'Live demonstration of advanced debugging techniques using Vue DevTools.',
-    image: 'https://images.pexels.com/photos/3182801/pexels-photo-3182801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  },
-  {
-    id: 7,
-    title: 'Building Accessible Vue Applications',
-    date: '2025-04-05',
-    location: 'iLabs Hyderabad',
-    description: 'Learn how to create inclusive Vue applications that meet WCAG standards.',
-    image: 'https://media.licdn.com/dms/image/v2/D5622AQEIFJo6SXwIoA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732643441016?e=1758758400&v=beta&t=sc12WcVfaWTLkaPij5XoZQbRnxR6mCm9wiV1IQnFe2w'
-  },
-  {
-    id: 8,
-    title: 'Vue Animation Workshop',
-    date: '2025-05-18',
-    location: 'WeWork Hyderabad',
-    description: 'Explore animation techniques in Vue with CSS transitions and JavaScript hooks.',
-    image: 'https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  },
-  {
-    id: 9,
-    title: 'Vue Testing Strategies',
-    date: '2025-06-22',
-    location: 'T-Hub Foundation',
-    description: 'Comprehensive overview of testing methodologies for Vue applications.',
-    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  }
-])
+// const pastEvents = ref([
+//   {
+//     id: 4,
+//     title: 'VueVerse Launch Party',
+//     date: '2025-01-15',
+//     location: 'Hyderabad Central Library',
+//     description: 'The inaugural event for VueVerse Hyderabad with community networking and talks.',
+//     image: 'https://images.pexels.com/photos/2505056/pexels-photo-2505056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+//   },
+//   {
+//     id: 5,
+//     title: 'Vue 3 Composition API Workshop',
+//     date: '2025-02-20',
+//     location: 'T-Hub Foundation',
+//     description: 'Hands-on workshop covering the fundamentals of Vue 3\'s Composition API.',
+//     image: 'https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+//   },
+//   {
+//     id: 6,
+//     title: 'Vue DevTools: Debugging Masters',
+//     date: '2025-03-12',
+//     location: 'IIIT Hyderabad',
+//     description: 'Live demonstration of advanced debugging techniques using Vue DevTools.',
+//     image: 'https://images.pexels.com/photos/3182801/pexels-photo-3182801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+//   },
+//   {
+//     id: 7,
+//     title: 'Building Accessible Vue Applications',
+//     date: '2025-04-05',
+//     location: 'iLabs Hyderabad',
+//     description: 'Learn how to create inclusive Vue applications that meet WCAG standards.',
+//     image: 'https://media.licdn.com/dms/image/v2/D5622AQEIFJo6SXwIoA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732643441016?e=1758758400&v=beta&t=sc12WcVfaWTLkaPij5XoZQbRnxR6mCm9wiV1IQnFe2w'
+//   },
+//   {
+//     id: 8,
+//     title: 'Vue Animation Workshop',
+//     date: '2025-05-18',
+//     location: 'WeWork Hyderabad',
+//     description: 'Explore animation techniques in Vue with CSS transitions and JavaScript hooks.',
+//     image: 'https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+//   },
+//   {
+//     id: 9,
+//     title: 'Vue Testing Strategies',
+//     date: '2025-06-22',
+//     location: 'T-Hub Foundation',
+//     description: 'Comprehensive overview of testing methodologies for Vue applications.',
+//     image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+//   }
+// ])
 </script>
 
 <template>
