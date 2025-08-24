@@ -90,22 +90,22 @@ onUnmounted(() => {
         
         <nav class="site-nav" :class="{ 'active': isMenuOpen || !isMobile }">
           <ul class="nav-links">
-            <li :class="{ 'active': isActive('/') }">
+            <li @click="closeMenu" :class="{ 'active': isActive('/') }">
               <router-link to="/">Home</router-link>
             </li>
-            <li :class="{ 'active': isActive('/about') }">
+            <li @click="closeMenu" :class="{ 'active': isActive('/about') }">
               <router-link to="/about">About</router-link>
             </li>
-            <li :class="{ 'active': isActive('/events') }">
+            <li @click="closeMenu" :class="{ 'active': isActive('/events') }">
               <router-link to="/events">Events</router-link>
             </li>
-            <li :class="{ 'active': isActive('/our-team') }">
+            <li @click="closeMenu" :class="{ 'active': isActive('/our-team') }">
               <router-link to="/our-team">Our Team</router-link>
             </li>
-            <li :class="{ 'active': isActive('/partners') }">
+            <li @click="closeMenu" :class="{ 'active': isActive('/partners') }">
               <router-link to="/partners">Partners</router-link>
             </li>
-            <li :class="{ 'active': isActive('/videos') }">
+            <li @click="closeMenu" :class="{ 'active': isActive('/videos') }">
               <router-link to="/videos">Videos</router-link>
             </li>
           </ul>

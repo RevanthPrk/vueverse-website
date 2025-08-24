@@ -174,7 +174,7 @@ const events = ref<Event[]>([
             title: 'Modern Vue JS: Accelerating development with a Headless approach and Jamstack using OneEntry',
             description: 'Passionate about creating intuitive user experiences.',
             image: 'https://media.licdn.com/dms/image/v2/D5622AQG92vMR3JOa1w/feedshare-shrink_800/B56ZcR1ynGHoAk-/0/1748351010938?e=1758758400&v=beta&t=oA4fmEQDxXcLWrmbSnKLYLPoGaBNFZFNK3mfbWoTCmQ',
-            social: 'https://twitter.com/alicejohnson'
+            social: 'https://www.linkedin.com/in/mjagadeeshwaran/'
         },
         {
             id: 4,
@@ -182,7 +182,7 @@ const events = ref<Event[]>([
             title: 'Modern Frontend Engineering: Tools, Techniques and Best Practices',
             description: 'Skilled in building robust server-side applications.',
             image: 'https://media.licdn.com/dms/image/v2/D5622AQHsTWXw_VHifg/feedshare-shrink_2048_1536/B56ZbiMfA1HUAo-/0/1747551650435?e=1758758400&v=beta&t=8bSXEylGLcq_9IH26IYFnW0UOolHTO9R2cSYLu_2aHI',
-            social: 'https://twitter.com/bobbrown'
+            social: 'https://www.linkedin.com/in/rameshemandi/'
         },
         {
             id: 5,
@@ -190,7 +190,7 @@ const events = ref<Event[]>([
             title: 'Slashing Cloud Costs in Half: A Real-World Success Story with Vercel',
             description: 'Expert in CI/CD and cloud infrastructure.',
             image: 'https://media.licdn.com/dms/image/v2/D5622AQHL6lMRHmU_DA/feedshare-shrink_800/B56ZZhKdpmGcAg-/0/1745386860808?e=1758758400&v=beta&t=C6spY-yrXMZBBHzGIlbb7qIZ9VN59hoMf_NXcmb1dgE',
-            social: 'https://twitter.com/charliedavis'
+            social: 'https://www.linkedin.com/in/udhayaprakasha-v-a71975a0/'
         }
     ]
   },
