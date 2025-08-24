@@ -26,12 +26,12 @@ const { t } = useI18n()
             <p>Welcome to <b>VueVerse</b> - your go-to destination for everything related to Vue 3! Whether you're an
               experienced developer or just getting started, this group is dedicated to exploring the latest features,
               releases, and best practices of Vue.js.
-              <ol style="margin-left: 16px;">
-                <li><b>Dive deep into the new features of Vue 3.</b></li>
-                <li><b>Solve real-world problems through collaborative discussion.</b></li>
-                <li><b>Share and discover tips, tools, and resources.</b></li>
-                <li><b>Stay up-to-date with the latest Vue.js releases and trends.</b></li>
-                <li><b>Foster learning through knowledge sharing and hands-on experience.</b></li>
+              <ol style="padding-bottom: 10px;">
+                <li>1. <b>Dive deep into the new features of Vue 3.</b></li>
+                <li>2. <b>Solve real-world problems through collaborative discussion.</b></li>
+                <li>3. <b>Share and discover tips, tools, and resources.</b></li>
+                <li>4. <b>Stay up-to-date with the latest Vue.js releases and trends.</b></li>
+                <li>5. <b>Foster learning through knowledge sharing and hands-on experience.</b></li>
               </ol>
 
               Join us in growing together, solving challenges, and celebrating the power of Vue 3! 
@@ -212,7 +212,7 @@ const { t } = useI18n()
       font-size: 2rem;
       font-weight: 700;
       color: #35495e;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
     
     p {
