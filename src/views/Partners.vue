@@ -32,6 +32,14 @@ const partners: Partner[] = [
   },
   {
     id: 3,
+    name: 'ThinkMates',
+    logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQHcDwM_STxRuQ/company-logo_200_200/company-logo_200_200/0/1660574004427?e=1758758400&v=beta&t=1ZRGdG00G0Fc6eSL6IVTjgP53Cbbk5R3zZUP79gtOBk',
+    description: t('partners.descriptions.techvista'),
+    type: 'Software Organization',
+    website: 'https://www.linkedin.com/company/thinkmates-edutech-pvt-ltd/'
+  },
+  {
+    id: 4,
     name: 'JSLovers',
     logo: 'https://media.licdn.com/dms/image/v2/D4E0BAQHYNRjBKSqn-Q/company-logo_200_200/company-logo_200_200/0/1718639979394?e=1758758400&v=beta&t=CLKcijZzN-abu7wx_oCDJgH1j0yHoOc-Wz5-eSxOFXc',
     description: t('partners.descriptions.thub'),
@@ -39,7 +47,7 @@ const partners: Partner[] = [
     website: 'https://jslovers.com/'
   },
   {
-    id: 4,
+    id: 5,
     name: 'ChennaiReact',
     logo: 'https://media.licdn.com/dms/image/v2/D560BAQGyrX_NTRK3tA/company-logo_200_200/company-logo_200_200/0/1723487993653/chennaireact_logo?e=1758758400&v=beta&t=J0DHCLGYrNnEhUSR_i5jtktcO9yFi7BdEfotwfd_Cu8',
     description: t('partners.descriptions.techvista'),
@@ -47,7 +55,7 @@ const partners: Partner[] = [
     website: 'https://www.linkedin.com/company/chennaireact/'
   },
   {
-    id: 5,
+    id: 6,
     name: 'D3 - Community',
     logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQFjiEoqun9lSg/company-logo_200_200/B4DZY9I1YUH4AM-/0/1744782448763/d3_community_logo?e=1758758400&v=beta&t=BxBrumg1e5sljCayeUmPWFtd8DoVJSZXXIvRNCq27Rg',
     description: t('partners.descriptions.techvista'),
@@ -55,7 +63,7 @@ const partners: Partner[] = [
     website: 'https://www.linkedin.com/company/d3-community/'
   },
   {
-    id: 6,
+    id: 7,
     name: 'Code on JVM',
     logo: 'https://media.licdn.com/dms/image/v2/D560BAQFeo13AYITciA/company-logo_200_200/company-logo_200_200/0/1734769360538/codeonjvmchennai_logo?e=1758758400&v=beta&t=Oo-TGAiA026Ow3LeQe_ZL5X4cKmZcS38w62_6q91KtA',
     description: t('partners.descriptions.techvista'),
