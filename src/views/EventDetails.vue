@@ -200,7 +200,7 @@ const events = ref<Event[]>([
     date: '',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Intersection of Vue.js and Artificial Intelligence. Discover how AI can transform the way we build, optimize, and scale Vue applications.',
-    image: 'https://media.licdn.com/dms/image/v2/D561FAQHFnaAWE8zBAA/feedshare-document-images_800/B56ZjA0oOoG0Ao-/1/1755581691983?e=1756944000&v=beta&t=QzRA924pj4n8y_VtA03MRiAB5oRxscXQ0RLJ_7MvzXU',
+    image: 'https://media.licdn.com/dms/image/v2/D561FAQHFnaAWE8zBAA/feedshare-document-images_800/B56ZjA0oOoG0Ao-/1/1755581691983?e=1758153600&v=beta&t=VW5kxbiXD8I2U6DwMdynHdbQCUYImLMP_arTF6OTW4g',
     images: [],
     speakers: []
   }
