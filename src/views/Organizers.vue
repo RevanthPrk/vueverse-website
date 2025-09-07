@@ -42,6 +42,43 @@ const organizers: Organizer[] = [
       github: 'https://github.com/Shivanik97'
     }
   },
+  {
+    id: 3,
+    name: 'SaiKumar Andhili',
+    role: 'Volunteer',
+    bio: t('organizers.bios.saikumar'),
+    image: 'https://media.licdn.com/dms/image/v2/D4E03AQECO6Qd4VgtFg/profile-displayphoto-shrink_800_800/B4EZO7eX5cHsAk-/0/1734017122957?e=1759968000&v=beta&t=x_9V1eO9NKjJoJMsimUEJboFtSL6Mh7vvPjB766JDsA',
+    socialLinks: {
+      // twitter: 'https://twitter.com',
+      linkedin: 'https://www.linkedin.com/in/andhili-saikumar-412593224/',
+      // github: 'https://github.com/Shivanik97'
+    }
+  },
+  {
+    id: 4,
+    name: 'Pavan Kumar Sairigapu',
+    role: 'UI/UX Designer',
+    bio: t('organizers.bios.pavan'),
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQEsOs86hDmdZA/profile-displayphoto-crop_800_800/B56Zj1VsB1HcAI-/0/1756462762126?e=1759968000&v=beta&t=L3fxpC1W8lKyeGs8VbpI5pGeIu9lPl8A8kflADa2rqQ',
+    socialLinks: {
+      // twitter: 'https://twitter.com',
+      linkedin: 'https://www.linkedin.com/in/pavan-kumar-sairigapu/',
+      // github: 'https://github.com/Shivanik97'
+    }
+  },
+  {
+    id: 5,
+    name: 'Malvika Reddy',
+    role: 'UI/UX Designer',
+    bio: t('organizers.bios.malvika'),
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQGgDQBXxjPyOw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1702635857008?e=1759968000&v=beta&t=DWR9ZKaaZ-n8UulGyP_g__lqgMGNCCk5wWnaKKzToD8',
+    socialLinks: {
+      // twitter: 'https://twitter.com',
+      linkedin: 'https://www.linkedin.com/in/malvikareddy18/',
+      // github: 'https://github.com/malvikareddy18'
+    }
+  },
+  
 ]
 </script>
 
