@@ -13,7 +13,7 @@ const events = ref([
     date: '2024-11-23',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Explore the ever-growing VueJS ecosystem. Stay updated with the latest tools, features, and innovations.',
-    image: 'https://media.licdn.com/dms/image/v2/D5622AQEIFJo6SXwIoA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732643441016?e=1758758400&v=beta&t=sc12WcVfaWTLkaPij5XoZQbRnxR6mCm9wiV1IQnFe2w'
+    image: '../src/assets/images/group1.jpg'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const events = ref([
     date: '2025-05-17',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Frontend Fusion brought together developers to explore the latest trends, tools, and practices in modern frontend development.',
-    image: 'https://media.licdn.com/dms/image/v2/D5622AQF388OAJ8LF1Q/feedshare-shrink_2048_1536/B56Zb5igXyHUAs-/0/1747943297763?e=1758758400&v=beta&t=A94Wy2IjcoPd4NAgW1jEYRJUU7quy42lzEuWfo2G40Q'
+    image: '../src/assets/images/group2.jpg'
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const events = ref([
     date: '',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Intersection of Vue.js and Artificial Intelligence. Discover how AI can transform the way we build, optimize, and scale Vue applications.',
-    image: 'https://media.licdn.com/dms/image/v2/D561FAQHFnaAWE8zBAA/feedshare-document-images_800/B56ZjA0oOoG0Ao-/1/1755581691983?e=1758153600&v=beta&t=VW5kxbiXD8I2U6DwMdynHdbQCUYImLMP_arTF6OTW4g'
+    image: '../src/assets/images/3rd.jpg'
   }
 ])
 

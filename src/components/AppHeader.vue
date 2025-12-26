@@ -105,6 +105,9 @@ onUnmounted(() => {
             <li @click="closeMenu" :class="{ 'active': isActive('/partners') }">
               <router-link to="/partners">Partners</router-link>
             </li>
+            <li @click="closeMenu" :class="{ 'active': isActive('/blogs') }">
+              <router-link to="/blogs">Blogs</router-link>
+            </li>
             <li @click="closeMenu" :class="{ 'active': isActive('/videos') }">
               <router-link to="/videos">Videos</router-link>
             </li>

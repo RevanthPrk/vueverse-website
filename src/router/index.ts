@@ -6,6 +6,7 @@ import Organizers from '../views/Organizers.vue'
 import Partners from '../views/Partners.vue'
 import Videos from '../views/Videos.vue'
 import EventDetails from '../views/EventDetails.vue'
+import Blogs from '../views/Blogs.vue'
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -42,5 +43,10 @@ export const routes: RouteRecordRaw[] = [
     path: '/videos',
     name: 'videos',
     component: Videos
-  }
+  },
+  {
+    path: '/blogs',
+    name: 'blogs',
+    component: Blogs
+  },
 ]

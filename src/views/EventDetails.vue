@@ -79,16 +79,17 @@ const events = ref<Event[]>([
     date: '2024-11-23',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Explore the ever-growing VueJS ecosystem. Stay updated with the latest tools, features, and innovations.',
-    image: 'https://media.licdn.com/dms/image/v2/D5622AQEIFJo6SXwIoA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732643441016?e=1758758400&v=beta&t=sc12WcVfaWTLkaPij5XoZQbRnxR6mCm9wiV1IQnFe2w',
+    image: '../src/assets/images/group1.jpg',
     images: [
-      'https://media.licdn.com/dms/image/v2/D5622AQHGbpQ0lDE60A/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732533442418?e=1758758400&v=beta&t=smjcZL_Js5NWEIhylV4dBaQUu-MjCtzlu9dT0dRFB1w',
-      'https://media.licdn.com/dms/image/v2/D5622AQF6k7ZGb3L4-w/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732533444285?e=1758758400&v=beta&t=1li7lD6KxdmsAWVkefaTwOo_996eIPzQYoM5gfCbndA',
-      'https://media.licdn.com/dms/image/v2/D5622AQHa7mfHpsnOAA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732644164768?e=1758758400&v=beta&t=ROSN1Ii1DXefN4QfzDycV9ersfTuCaPWLRFZVv2zegQ',
-      'https://media.licdn.com/dms/image/v2/D5622AQEQ3EARg96VgA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732644001631?e=1758758400&v=beta&t=suqb5T18WsO1hOClxh7wJbL5Jb-JWgPcRht53R6-KwI',
-      'https://media.licdn.com/dms/image/v2/D5622AQEIFJo6SXwIoA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732643441016?e=1758758400&v=beta&t=sc12WcVfaWTLkaPij5XoZQbRnxR6mCm9wiV1IQnFe2w',
-      'https://media.licdn.com/dms/image/v2/D5622AQE6HXYkaIW-hw/feedshare-shrink_1280/feedshare-shrink_1280/0/1732534633437?e=1758758400&v=beta&t=n4M6iKUkHluAWvCE9Db-wn_5N1WWwacs-qFB4K4sdrQ',
-      'https://media.licdn.com/dms/image/v2/D5622AQGExHw3i8qZmA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732379885955?e=1758758400&v=beta&t=x_9OfYDtmvU2H1spgCtQhaz_8hldB0tr1u-okPIr8Ew',
-      'https://media.licdn.com/dms/image/v2/D5622AQGUjyP3Pq_VGQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1732379885861?e=1758758400&v=beta&t=nQef8hgjgzQGCUv6GkvPgseoCknhIR8OBamy9whPVHo',
+      '../src/assets/images/1st.jpg',
+      '../src/assets/images/1stimage.jpg',
+      '../src/assets/images/1stmeetup.jpg',
+      '../src/assets/images/speakers1.jpg',
+      '../src/assets/images/ariqt sponsor.jpg',
+      '../src/assets/images/ariqt2.jpg',
+      '../src/assets/images/thub1.jpg',
+      '../src/assets/images/college 1st.jpg',
+      '../src/assets/images/friend1st.jpg',
     ],
     speakers: [
         {
@@ -96,7 +97,7 @@ const events = ref<Event[]>([
             name: 'Kondi Venkatesh',
             title: 'Why Every Developer needs Vitest',
             description: 'Expert in Vue.js and its ecosystem.',
-            image: 'https://media.licdn.com/dms/image/v2/D5622AQHsGAVdhyVEiQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732944354620?e=1758758400&v=beta&t=XYC497hSwtewwqAh0S9RSkh3U3xOxiNjnsADQUNxXj4',
+            image: '../../src/assets/images/kondi.jpg',
             social: 'https://www.linkedin.com/in/venkatesh-kondi-50890322b/'
         },
         {
@@ -104,7 +105,7 @@ const events = ref<Event[]>([
             name: 'Sumanth Thallapelly',
             title: 'Introduction to Storybook',
             description: 'Specializes in modern JavaScript frameworks.',
-            image: 'https://media.licdn.com/dms/image/v2/D5622AQElUHptlT-8RQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732616398418?e=1758758400&v=beta&t=VNs4kfRzbdDHyGgH2Yie1TDoKiV9pX8OefvY481eqKA',
+            image: '../../src/assets/images/sumanth2.jpeg',
             social: 'https://www.linkedin.com/in/sumanth469/'
         },
         {
@@ -112,7 +113,7 @@ const events = ref<Event[]>([
             name: 'Kiran Kumar Challagiri',
             title: 'Mastering Vue JS Foundations',
             description: 'Passionate about creating intuitive user experiences.',
-            image: 'https://media.licdn.com/dms/image/v2/D5622AQHqzh0Hi71eFg/feedshare-shrink_1280/feedshare-shrink_1280/0/1732643432311?e=1758758400&v=beta&t=MBGdHNe9BRvx342-EAWzK4dx-fu70PHFzxmiaq8FIgU',
+            image: '../../src/assets/images/kiran.jpg',
             social: 'https://www.linkedin.com/in/kirankumar3117/'
         },
         {
@@ -120,7 +121,7 @@ const events = ref<Event[]>([
             name: 'Hithesh SVSK',
             title: 'VueVolution - Migrate from Vue2 to Vue3',
             description: 'Skilled in building robust server-side applications.',
-            image: 'https://media.licdn.com/dms/image/v2/D561FAQGMJgwsXsISZw/feedshare-document-images_800/feedshare-document-images_800/1/1730975458517?e=1756944000&v=beta&t=VWud6U0DwRYaNDBF1ZbltPwWG6QF5O_mhlrJZKaMCrI',
+            image: '../../src/assets/images/speakers1.jpg',
             social: 'https://www.linkedin.com/in/sunkara-hithesh-naidu-26826717b/'
         },
         {
@@ -139,17 +140,15 @@ const events = ref<Event[]>([
     date: '2025-05-17',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Frontend Fusion brought together developers to explore the latest trends, tools, and practices in modern frontend development.',
-    image: 'https://media.licdn.com/dms/image/v2/D5622AQF388OAJ8LF1Q/feedshare-shrink_2048_1536/B56Zb5igXyHUAs-/0/1747943297763?e=1758758400&v=beta&t=A94Wy2IjcoPd4NAgW1jEYRJUU7quy42lzEuWfo2G40Q',
+    image: '../src/assets/images/group2.jpg',
     images: [
-      'https://media.licdn.com/dms/image/v2/D5622AQGshK1usqY4pQ/feedshare-shrink_2048_1536/B56Zbdb7ETHUAo-/0/1747471807964?e=1758758400&v=beta&t=2_Pi7pfpM2xrUuMG8L97LrrjYQjanLDxYECjKi_p9kA',
-      'https://media.licdn.com/dms/image/v2/D5622AQGGpUCgudMVBQ/feedshare-shrink_2048_1536/B56Zb5igXhHUAo-/0/1747943296557?e=1758758400&v=beta&t=v7iEeQpbIQHzim4IVlwNzOIux9E6ydrETjhiHn0K2Y8',
-    //   'https://media.licdn.com/dms/image/v2/D5622AQFfZV8nbS5BfQ/feedshare-shrink_1280/B56Zbt1oYlGgAo-/0/1747746983477?e=1758758400&v=beta&t=czRoOMg5DrxyiNkcDC2tpAClP-kQPZK4XIeRBl2arn8',
-      'https://media.licdn.com/dms/image/v2/D5622AQHvbu03l6y5Og/feedshare-shrink_2048_1536/B56Zb5igX1H4Ao-/0/1747943296260?e=1758758400&v=beta&t=Tpa21SQv6trTWrHf-kJkkWcvU30eS6_aSlgIAruJ5kE',
-      'https://media.licdn.com/dms/image/v2/D5622AQF388OAJ8LF1Q/feedshare-shrink_2048_1536/B56Zb5igXyHUAs-/0/1747943297763?e=1758758400&v=beta&t=A94Wy2IjcoPd4NAgW1jEYRJUU7quy42lzEuWfo2G40Q',
-      'https://media.licdn.com/dms/image/v2/D5622AQHsTWXw_VHifg/feedshare-shrink_2048_1536/B56ZbiMfA1HUAo-/0/1747551650435?e=1758758400&v=beta&t=8bSXEylGLcq_9IH26IYFnW0UOolHTO9R2cSYLu_2aHI',
-    //   'https://media.licdn.com/dms/image/v2/D5622AQGFSpozOctvXQ/feedshare-shrink_2048_1536/B56ZbdeMvSH4Ao-/0/1747472407164?e=1758758400&v=beta&t=SLilu68mNyuCIVhQR1oZgHwTKuVvCLkq_tlZH2mzEMM',
-      'https://media.licdn.com/dms/image/v2/D5622AQEInZF1-GRINQ/feedshare-shrink_2048_1536/B56Zbdb7EaGoAo-/0/1747471808453?e=1758758400&v=beta&t=HC2HxfdoC8KenREKl2wyxtY3HIctpSRPMrsIfr89Xuw',
-      'https://media.licdn.com/dms/image/v2/D5622AQHOpfnq2fTh7w/feedshare-shrink_2048_1536/B56Zb.ZFu4HoAo-/0/1748024753458?e=1758758400&v=beta&t=pMN6_cZYPmhPoD1bGo1PyS9Pqs0dy3qAykKWzNIEy_M',
+      '../src/assets/images/2nd.jpg',
+      '../src/assets/images/speakers2.jpg',
+      '../src/assets/images/oneentry.jpg',
+      '../src/assets/images/collaborators2.jpg',
+      '../src/assets/images/stickers.jpg',
+      '../src/assets/images/thub1.jpg',
+      '../src/assets/images/group2.jpg',
     ],
     speakers: [
         {
@@ -157,7 +156,7 @@ const events = ref<Event[]>([
             name: 'Jyothi Prakash',
             title: 'Wait... JavaScript Can do it..?',
             description: 'Expert in Vue.js and its ecosystem.',
-            image: 'https://media.licdn.com/dms/image/v2/D5622AQHnn2ym_6AQGQ/feedshare-shrink_2048_1536/B56Zbdk.MjGgAo-/0/1747474181828?e=1758758400&v=beta&t=EVG-BsCH_v8f_xFpBBzFFmPR1GJYlgSxNfJAMwofxnQ',
+            image: '../src/assets/images/jyothi.jpg',
             social: 'https://www.linkedin.com/in/jyothi-prakash-1324a61b3/'
         },
         {
@@ -165,7 +164,7 @@ const events = ref<Event[]>([
             name: 'Aravind Kumar J',
             title: 'React Reconciliation: The Hidden Engine Behind Your Components.',
             description: 'Specializes in modern JavaScript frameworks.',
-            image: 'https://media.licdn.com/dms/image/v2/D5622AQGTdjv6d9O7OA/feedshare-shrink_2048_1536/B56Zb5igXvHcAo-/0/1747943297319?e=1758758400&v=beta&t=ysHM4pC434DzldEMUvOVheWGSgQOiaMa-AUueF9hCm0',
+            image: '../src/assets/images/aravind.jpg',
             social: 'https://www.linkedin.com/in/mjagadeeshwaran/'
         },
         {
@@ -173,7 +172,7 @@ const events = ref<Event[]>([
             name: 'Jagadeeshwaran M',
             title: 'Modern Vue JS: Accelerating development with a Headless approach and Jamstack using OneEntry',
             description: 'Passionate about creating intuitive user experiences.',
-            image: 'https://media.licdn.com/dms/image/v2/D5622AQG92vMR3JOa1w/feedshare-shrink_800/B56ZcR1ynGHoAk-/0/1748351010938?e=1758758400&v=beta&t=oA4fmEQDxXcLWrmbSnKLYLPoGaBNFZFNK3mfbWoTCmQ',
+            image: '../src/assets/images/jagadeesh.jpg',
             social: 'https://www.linkedin.com/in/mjagadeeshwaran/'
         },
         {
@@ -181,7 +180,7 @@ const events = ref<Event[]>([
             name: 'Ramesh Emandi',
             title: 'Modern Frontend Engineering: Tools, Techniques and Best Practices',
             description: 'Skilled in building robust server-side applications.',
-            image: 'https://media.licdn.com/dms/image/v2/D5622AQHsTWXw_VHifg/feedshare-shrink_2048_1536/B56ZbiMfA1HUAo-/0/1747551650435?e=1758758400&v=beta&t=8bSXEylGLcq_9IH26IYFnW0UOolHTO9R2cSYLu_2aHI',
+            image: '../src/assets/images/quantana.jpg',
             social: 'https://www.linkedin.com/in/rameshemandi/'
         },
         {
@@ -189,7 +188,7 @@ const events = ref<Event[]>([
             name: 'UdhayaPrakash V',
             title: 'Slashing Cloud Costs in Half: A Real-World Success Story with Vercel',
             description: 'Expert in CI/CD and cloud infrastructure.',
-            image: 'https://media.licdn.com/dms/image/v2/D5622AQHL6lMRHmU_DA/feedshare-shrink_800/B56ZZhKdpmGcAg-/0/1745386860808?e=1758758400&v=beta&t=C6spY-yrXMZBBHzGIlbb7qIZ9VN59hoMf_NXcmb1dgE',
+            image: '../src/assets/images/udhaya.jpeg',
             social: 'https://www.linkedin.com/in/udhayaprakasha-v-a71975a0/'
         }
     ]
@@ -200,7 +199,7 @@ const events = ref<Event[]>([
     date: '',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Intersection of Vue.js and Artificial Intelligence. Discover how AI can transform the way we build, optimize, and scale Vue applications.',
-    image: 'https://media.licdn.com/dms/image/v2/D561FAQHFnaAWE8zBAA/feedshare-document-images_800/B56ZjA0oOoG0Ao-/1/1755581691983?e=1758153600&v=beta&t=VW5kxbiXD8I2U6DwMdynHdbQCUYImLMP_arTF6OTW4g',
+    image: '../src/assets/images/3rd.jpg',
     images: [],
     speakers: []
   }

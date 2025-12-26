@@ -43,11 +43,29 @@ const videos: Video[] = [
     video: 'https://www.youtube.com/watch?v=cXiy8jtgfmM'
   },
   {
+    id: 'oHg5SJYRHh0',  // placeholder ID
+    title: 'Void0: The Future of JavaScript Ecosystem',
+    description: 'Next-generation of JavaScript toolchain, Achieving a Unified, High Performance, Composable, Runtime Agnostic with Vite \nUsing Rolldown, OXC and completely Rust based Bundler and Compiler.',
+    thumbnail: '../src/assets/images/talk.png',
+    date: '2025-09-27',
+    duration: '30:42',
+    video: 'https://www.youtube.com/watch?v=JkbSpVTVOHo'
+  },
+  {
     id: 'LLFys7v-l4c',  // placeholder ID
     title: 'State of Vite and Vue 2025 by Creator Evan You',
     description: 'What is the State of Vue in 2025?Hear about Alien Signals, Devtools v7, Vapor Mode, Rolldown Vite, Vue Plus.',
-    thumbnail: 'https://i3.ytimg.com/vi/gOffFaYUxms/maxresdefault.jpg',
+    thumbnail: '../src/assets/images/vite-thumbnail.jpg',
     date: '2025-03-22',
+    duration: '36:05',
+    video: 'https://www.youtube.com/watch?v=x7Jsmt_o9ek'
+  },
+   {
+    id: 'LLFys7v-l3c',  // placeholder ID
+    title: 'Evan You | Vite Beyond a Build Tool | ViteConf 2025',
+    description: 'Evan You unveils Vite+, a unified toolchain built on Vite, Vitest, Rollup, and Ox. This ViteConf 2025 talk demonstrates how Vite is evolving beyond a simple build tool, showcasing significant performance improvements. A live coding demo highlights Vite+\'s powerful features, including a new caching system\'s date,',
+    thumbnail: 'https://i3.ytimg.com/vi/gOffFaYUxms/maxresdefault.jpg',
+    date: '2025-10-13',
     duration: '41:05',
     video: 'https://www.youtube.com/watch?v=gOffFaYUxms&t=1s'
   },

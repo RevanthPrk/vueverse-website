@@ -23,7 +23,7 @@ const organizers: Organizer[] = [
     name: 'Revanth Kumar Patha',
     role: 'Founder',
     bio: t('organizers.bios.revanth'),
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQHCuiAM7-Gslw/profile-displayphoto-shrink_800_800/B56ZYoW9fKGoAc-/0/1744433831123?e=1758758400&v=beta&t=ba478TPkZA-lMXPPWG9Enag4tmFfs9T5GnpAHRcBKVQ',
+    image: '../src/assets/images/revanth.jpeg',
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/revanth-kumar-patha-9246841a0/',
@@ -35,7 +35,7 @@ const organizers: Organizer[] = [
     name: 'Shivani Kuntumalla',
     role: 'Lead Volunteer',
     bio: t('organizers.bios.shivani'),
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQHM4pAOwvL8Aw/profile-displayphoto-shrink_800_800/B56ZPybIlxGQAc-/0/1734939020298?e=1758758400&v=beta&t=ZfrAZvcy5dRh0JOu5iejRh5LDD_gelh9kfDB9Zej3SU',
+    image: '../src/assets/images/shivani.jpeg',
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/shivanik1997/',
@@ -47,7 +47,7 @@ const organizers: Organizer[] = [
     name: 'SaiKumar Andhili',
     role: 'Volunteer',
     bio: t('organizers.bios.saikumar'),
-    image: 'https://media.licdn.com/dms/image/v2/D4E03AQECO6Qd4VgtFg/profile-displayphoto-shrink_800_800/B4EZO7eX5cHsAk-/0/1734017122957?e=1759968000&v=beta&t=x_9V1eO9NKjJoJMsimUEJboFtSL6Mh7vvPjB766JDsA',
+    image: '../src/assets/images/sai.jpg',
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/andhili-saikumar-412593224/',
@@ -59,7 +59,7 @@ const organizers: Organizer[] = [
     name: 'Pavan Kumar Sairigapu',
     role: 'UI/UX Designer',
     bio: t('organizers.bios.pavan'),
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQEsOs86hDmdZA/profile-displayphoto-crop_800_800/B56Zj1VsB1HcAI-/0/1756462762126?e=1759968000&v=beta&t=L3fxpC1W8lKyeGs8VbpI5pGeIu9lPl8A8kflADa2rqQ',
+    image: '../src/assets/images/pavan.png',
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/pavan-kumar-sairigapu/',
@@ -71,7 +71,7 @@ const organizers: Organizer[] = [
     name: 'Malvika Reddy',
     role: 'UI/UX Designer',
     bio: t('organizers.bios.malvika'),
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQGgDQBXxjPyOw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1702635857008?e=1759968000&v=beta&t=DWR9ZKaaZ-n8UulGyP_g__lqgMGNCCk5wWnaKKzToD8',
+    image: '../src/assets/images/malvika.jpg',
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/malvikareddy18/',
