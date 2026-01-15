@@ -288,6 +288,12 @@ onUnmounted(() => {
     align-items: center;
     gap: 1rem;
   }
+
+  .nav-actions:hover {
+    .btn {
+      color: white;
+    }
+  }
 }
 
 @media (max-width: 767px) {

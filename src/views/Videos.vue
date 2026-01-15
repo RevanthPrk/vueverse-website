@@ -3,6 +3,10 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
+// Import local thumbnails so Vite bundles them
+import talkImg from '../assets/images/talk.png'
+import viteThumbnail from '../assets/images/vite-thumbnail.jpg'
+
 interface Video {
   id: string
   title: string
@@ -46,7 +50,7 @@ const videos: Video[] = [
     id: 'oHg5SJYRHh0',  // placeholder ID
     title: 'Void0: The Future of JavaScript Ecosystem',
     description: 'Next-generation of JavaScript toolchain, Achieving a Unified, High Performance, Composable, Runtime Agnostic with Vite \nUsing Rolldown, OXC and completely Rust based Bundler and Compiler.',
-    thumbnail: '../src/assets/images/talk.png',
+  thumbnail: talkImg,
     date: '2025-09-27',
     duration: '30:42',
     video: 'https://www.youtube.com/watch?v=JkbSpVTVOHo'
@@ -55,7 +59,7 @@ const videos: Video[] = [
     id: 'LLFys7v-l4c',  // placeholder ID
     title: 'State of Vite and Vue 2025 by Creator Evan You',
     description: 'What is the State of Vue in 2025?Hear about Alien Signals, Devtools v7, Vapor Mode, Rolldown Vite, Vue Plus.',
-    thumbnail: '../src/assets/images/vite-thumbnail.jpg',
+  thumbnail: viteThumbnail,
     date: '2025-03-22',
     duration: '36:05',
     video: 'https://www.youtube.com/watch?v=x7Jsmt_o9ek'

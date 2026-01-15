@@ -3,6 +3,14 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
+// Import organizer images so Vite bundles them for production
+import revanthImg from '../assets/images/revanth.jpeg'
+import shivaniImg from '../assets/images/shivani.jpeg'
+import saiImg from '../assets/images/sai.jpg'
+import pavanImg from '../assets/images/pavan.png'
+import malvikaImg from '../assets/images/malvika.jpg'
+import joinImg from '../assets/images/join.png'
+
 interface Organizer {
   id: number
   name: string
@@ -23,7 +31,7 @@ const organizers: Organizer[] = [
     name: 'Revanth Kumar Patha',
     role: 'Founder',
     bio: t('organizers.bios.revanth'),
-    image: '../src/assets/images/revanth.jpeg',
+  image: revanthImg,
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/revanth-kumar-patha-9246841a0/',
@@ -35,7 +43,7 @@ const organizers: Organizer[] = [
     name: 'Shivani Kuntumalla',
     role: 'Lead Volunteer',
     bio: t('organizers.bios.shivani'),
-    image: '../src/assets/images/shivani.jpeg',
+  image: shivaniImg,
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/shivanik1997/',
@@ -47,7 +55,7 @@ const organizers: Organizer[] = [
     name: 'SaiKumar Andhili',
     role: 'Volunteer',
     bio: t('organizers.bios.saikumar'),
-    image: '../src/assets/images/sai.jpg',
+  image: saiImg,
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/andhili-saikumar-412593224/',
@@ -59,7 +67,7 @@ const organizers: Organizer[] = [
     name: 'Pavan Kumar Sairigapu',
     role: 'UI/UX Designer',
     bio: t('organizers.bios.pavan'),
-    image: '../src/assets/images/pavan.png',
+  image: pavanImg,
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/pavan-kumar-sairigapu/',
@@ -71,7 +79,7 @@ const organizers: Organizer[] = [
     name: 'Malvika Reddy',
     role: 'UI/UX Designer',
     bio: t('organizers.bios.malvika'),
-    image: '../src/assets/images/malvika.jpg',
+  image: malvikaImg,
     socialLinks: {
       // twitter: 'https://twitter.com',
       linkedin: 'https://www.linkedin.com/in/malvikareddy18/',
@@ -156,7 +164,7 @@ const organizers: Organizer[] = [
             <a href="#" class="btn btn-primary">{{ t('organizers.joinTeam.button') }}</a>
           </div>
           <div class="join-team-image">
-            <img src="../assets/images/join.png" alt="Join the VueVerse Team" />
+            <img :src="joinImg" alt="Join the VueVerse Team" />
           </div>
         </div>
       </section>

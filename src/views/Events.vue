@@ -30,10 +30,10 @@ const events = ref([
   },
   {
     id: 3,
-    title: 'Vue + AI - Exploring the Future',
+    title: 'VueVerse Connect 2026',
     date: '',
-    location: 'T-Hub Phase 2, Hyderabad',
-    description: 'Intersection of Vue.js and Artificial Intelligence. Discover how AI can transform the way we build, optimize, and scale Vue applications.',
+    location: 'To be announced',
+    description: 'Interesting features and new releases of Vue.js it\'s ecosystem & Frontend Development.',
     image: group3
   }
 ])
