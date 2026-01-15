@@ -58,7 +58,7 @@ const videos: Video[] = [
   {
     id: 'LLFys7v-l4c',  // placeholder ID
     title: 'State of Vite and Vue 2025 by Creator Evan You',
-    description: 'What is the State of Vue in 2025?Hear about Alien Signals, Devtools v7, Vapor Mode, Rolldown Vite, Vue Plus.',
+    description: 'Evan You unveils Vite+, a unified toolchain built on Vite, Vitest, Rollup, and Ox. This ViteConf 2025 talk demonstrates how Vite is evolving beyond a simple build tool, showcasing significant performance improvements.',
   thumbnail: viteThumbnail,
     date: '2025-03-22',
     duration: '36:05',
@@ -121,7 +121,7 @@ const videos: Video[] = [
               <span class="video-duration">{{ videos[0].duration }}</span>
             </p> -->
             <p class="video-description">{{ videos[0].description }}</p>
-            <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1" target="_blank" class="btn btn-primary">
+            <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1" target="_blank" class="btn btn-primary link">
               {{ t('videos.watchOnYoutube') }}
             </a>
           </div>
@@ -182,6 +182,12 @@ const videos: Video[] = [
   font-size: 1.1rem;
   line-height: 1.7;
   color: #6c757d;
+}
+
+.link {
+  &:hover {
+    color: white !important;
+  }
 }
 
 .featured-video {

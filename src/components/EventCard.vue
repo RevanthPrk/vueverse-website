@@ -44,7 +44,7 @@ const date = new Date(props.event.date)
       <p class="event-description">{{ event.description }}</p>
       <div class="event-actions">
         <router-link :to="`/events/${event.id}`" class="btn-details">{{ t('events.viewDetails') }}</router-link>
-        <a href="https://lu.ma/vueverse?k=c&period=past" class="btn-register">{{ t('events.register') }}</a>
+        <a href="https://luma.com/vueverse" class="btn-register">{{ t('events.register') }}</a>
       </div>
     </div>
   </div>

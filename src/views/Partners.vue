@@ -189,7 +189,7 @@ const communityPartners = partners.filter(partner => partner.type === 'Community
                 <span>{{ t('partners.becomePartner.benefits.items.support') }}</span>
               </li>
             </ul>
-            <a href="#" class="btn btn-primary partner-website">{{ t('partners.becomePartner.button') }}</a>
+            <a href="https://forms.gle/EgiHVKVbEASFhBqS7" target="_blank" class="btn btn-primary partner-website">{{ t('partners.becomePartner.button') }}</a>
           </div>
           <div class="become-partner-image">
             <img :src="collaborateImg" alt="Become a VueVerse Partner" />

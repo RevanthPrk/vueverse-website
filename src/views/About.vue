@@ -23,7 +23,7 @@ const { t } = useI18n()
         <div class="about-intro">
           <div class="about-content">
             <h2>{{ t('about.story.title') }}</h2>
-            <p>Welcome to <b>VueVerse</b> - your go-to destination for everything related to Vue 3! Whether you're an
+            <p>Welcome to <b><a href="https://www.linkedin.com/company/vueversehyderabad/" target="_blank">VueVerse</a></b> - your go-to destination for everything related to Vue 3! Whether you're an
               experienced developer or just getting started, this group is dedicated to exploring the latest features,
               releases, and best practices of Vue.js.
               <ol style="padding-bottom: 10px;">
@@ -159,7 +159,29 @@ const { t } = useI18n()
               {{ t('about.join.channels.discord') }}
             </a>
 
-             <a href="https://app.daily.dev/squads/vueverse1" target="_blank" class="join-channel-btn">
+             <a href="https://chat.whatsapp.com/FDZGo3bOoy9CLNrqb1pp0w" target="_blank" class="join-channel-btn">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg> -->
+               <!-- <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/dailydotdev.svg" width="20" height="20" color="green" alt="daily.dev" /> -->
+                <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M20.52 3.48A11.85 11.85 0 0 0 12 0C5.37 0 .02 5.34.02 11.95c0 2.11.55 4.17 1.61 6L0 24l6.22-1.62a11.94 11.94 0 0 0 5.78 1.47h.01c6.63 0 11.98-5.34 11.98-11.95 0-3.19-1.24-6.19-3.47-8.42zM12 22.1c-1.87 0-3.7-.5-5.29-1.45l-.38-.23-3.69.96.99-3.59-.25-.37a10.03 10.03 0 0 1-1.6-5.47C1.78 6.32 6.3 1.9 12 1.9c2.71 0 5.26 1.05 7.18 2.97A10.03 10.03 0 0 1 22.1 12c0 5.6-4.52 10.1-10.1 10.1zm5.16-7.47c-.28-.14-1.65-.82-1.91-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.18-.44-2.24-1.41-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.1-.23-.55-.47-.47-.64-.48h-.54c-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1 2.74 1.14 2.93.14.19 1.96 3.13 4.77 4.39.67.29 1.19.47 1.6.6.67.21 1.29.18 1.77.11.54-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.12-.26-.19-.54-.33z"
+              />
+            </svg>
+
+             Whatsapp Community
+            </a>
+
+            <a href="https://app.daily.dev/squads/vueverse1" target="_blank" class="join-channel-btn">
               <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg> -->
                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/dailydotdev.svg" width="20" height="20" color="green" alt="daily.dev" />
 

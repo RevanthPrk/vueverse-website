@@ -11,7 +11,7 @@ export default {
   home: {
     hero: {
       title: 'VueVerse',
-      subtitle: 'Empowering developers through the Vue ecosystem in the heart of Hyderabad',
+      subtitle: 'Empowering developers through the Vue ecosystem in the heart of India',
       joinCommunity: 'Join Our Community',
       upcomingEvents: 'Upcoming Events'
     },
@@ -22,14 +22,14 @@ export default {
     },
     about: {
       title: 'About VueVerse',
-      description: 'VueVerse Hyderabad is a thriving community of Vue.js enthusiasts and developers in the beautiful city of Hyderabad, India. Our community was founded in 2023 with the mission to foster collaboration, learning, and innovation through the Vue ecosystem.'
+      description: 'VueVerse is a thriving community of Vue.js enthusiasts and developers in the beautiful city of Hyderabad, India. Our community was founded in 2023 with the mission to foster collaboration, learning, and innovation through the Vue ecosystem.'
     }
   },
   about: {
     title: 'About',
     story: {
       title: 'Our Story',
-      description: 'VueVerse Hyderabad was founded in {year} to unite the Vue.js developers in and around Hyderabad into a cohesive community. Since then, we\'ve grown into one of India\'s largest Vue-focused developer groups.',
+      description: 'VueVerse was founded in {year} to unite the Vue.js developers in and around Hyderabad into a cohesive community. Since then, we\'ve grown into one of India\'s largest Vue-focused developer groups.',
       yearsActive: 'For {years} years, we\'ve been fostering knowledge sharing, professional development, and building a supportive network for Vue enthusiasts at all skill levels.',
       impact: 'Our meetups and workshops have attracted developers from major tech companies, startups, and educational institutions across Hyderabad. We\'re proud to have contributed to the growth of the Vue ecosystem in India.'
     },
@@ -79,11 +79,11 @@ export default {
       title: 'Hyderabad\'s Tech Scene',
       description1: 'Hyderabad has emerged as one of India\'s premier technology hubs, home to global tech giants, innovative startups, and world-class educational institutions.',
       description2: 'Known as "Cyberabad," the city features vibrant tech parks like HITEC City and Gachibowli that host hundreds of technology companies. The government\'s T-Hub initiative has further accelerated the startup ecosystem.',
-      description3: 'VueVerse Hyderabad is proud to be an integral part of this thriving tech landscape, contributing to the city\'s reputation as a center for frontend excellence and Vue.js innovation.'
+      description3: 'VueVerse is proud to be an integral part of this thriving tech landscape, contributing to the city\'s reputation as a center for frontend excellence and Vue.js innovation.'
     },
     join: {
       title: 'Join Our Community',
-      description: 'Whether you\'re a seasoned Vue developer or just getting started with frontend development, there\'s a place for you in VueVerse Hyderabad. Join our active community today!',
+      description: 'Whether you\'re a seasoned Vue developer or just getting started with frontend development, there\'s a place for you in VueVerse. Join our active community today!',
       channels: {
         discord: 'Discord Community',
         twitter: 'Twitter',
@@ -131,7 +131,7 @@ export default {
   partners: {
     title: 'Partners',
     intro: 'Our Supporters',
-    description: 'VueVerse Hyderabad is proudly supported by organizations that believe in the power of community and technology education. Our partners provide venues, technical expertise, educational resources, and other forms of support that make our events and initiatives possible.',
+    description: 'VueVerse is proudly supported by organizations that believe in the power of community and technology education. Our partners provide venues, technical expertise, educational resources, and other forms of support that make our events and initiatives possible.',
     tiers: {
       platinum: 'Platinum',
       gold: 'Gold',
@@ -140,7 +140,7 @@ export default {
     },
     becomePartner: {
       title: 'Become a Partner',
-      description: 'Partner with VueVerse Hyderabad to connect with the Vue.js community, showcase your brand to talented developers, and support technology education in Hyderabad.',
+      description: 'Partner with VueVerse to connect with the Vue.js community, showcase your brand to talented developers, and support technology education in Hyderabad.',
       benefits: {
         title: 'Partnership Benefits:',
         items: {
@@ -151,7 +151,7 @@ export default {
           support: 'Support technology education and innovation in Hyderabad'
         }
       },
-      button: 'Become a Partner'
+      button: 'Become a Partner/Sponsor'
     }
   },
   videos: {

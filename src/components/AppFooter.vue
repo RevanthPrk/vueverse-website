@@ -12,7 +12,7 @@ const currentYear = ref(new Date().getFullYear());
           <router-link to="/" class="logo">
             <img
               src="../assets/images/vueverse_logo1.png"
-              alt="VueVerse Hyderabad Logo"
+              alt="VueVerse Logo"
               width="120"
             />
           </router-link>
@@ -85,6 +85,7 @@ const currentYear = ref(new Date().getFullYear());
 
       <div class="footer-bottom">
         <p>&copy; {{ currentYear }} VueVerse. All rights reserved.</p>
+        <p>Vue is our Passion and It's available for all 💚</p>
         <div class="social-links">
           <a
             href="https://chat.whatsapp.com/FDZGo3bOoy9CLNrqb1pp0w"
@@ -128,6 +129,29 @@ const currentYear = ref(new Date().getFullYear());
               <path
                 d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.444.864-.608 1.249-1.844-.276-3.68-.276-5.486 0-.164-.398-.405-.874-.617-1.249a.077.077 0 0 0-.079-.037 19.736 19.736 0 0 0-4.885 1.515.07.07 0 0 0-.032.027C1.393 9.045.688 13.58 1.066 18.058a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.027c.461-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.105 12.28 12.28 0 0 1-1.872-.892.077.077 0 0 1-.008-.127c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .079.009c.12.099.246.198.373.292a.077.077 0 0 1-.006.127c-.598.343-1.23.645-1.873.891a.076.076 0 0 0-.04.106c.36.698.772 1.364 1.225 1.994a.076.076 0 0 0 .084.028 19.876 19.876 0 0 0 5.994-3.03.077.077 0 0 0 .031-.056c.5-5.177-.838-9.672-3.548-13.662a.06.06 0 0 0-.031-.028ZM9.217 13.499c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.418 2.157-2.418 1.21 0 2.174 1.095 2.157 2.418 0 1.334-.956 2.419-2.157 2.419Zm7.399 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.418 2.157-2.418 1.21 0 2.174 1.095 2.157 2.418 0 1.334-.947 2.419-2.157 2.419Z"
               />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/vueverse_hyderabad/"
+            target="_blank"
+            class="social-link"
+            title="Instagram"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-label="Instagram"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
           </a>
           <a

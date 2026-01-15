@@ -161,7 +161,7 @@ const organizers: Organizer[] = [
                 <span><b>{{ t('organizers.joinTeam.roles.manager') }}</b></span>
               </li>
             </ul>
-            <a href="#" class="btn btn-primary">{{ t('organizers.joinTeam.button') }}</a>
+            <a href="https://forms.gle/JZ1innfA2WYiUTCj9" target="_blank" class="btn btn-primary link">{{ t('organizers.joinTeam.button') }}</a>
           </div>
           <div class="join-team-image">
             <img :src="joinImg" alt="Join the VueVerse Team" />
@@ -180,6 +180,12 @@ const organizers: Organizer[] = [
   font-size: 1.1rem;
   line-height: 1.7;
   color: #6c757d;
+}
+
+.link {
+  &:hover {
+    color: white !important;
+  }
 }
 
 .organizers-grid {

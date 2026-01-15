@@ -107,7 +107,7 @@ const events = ref([
           <div class="event-cta-text">
             <h2>{{ t('events.cta.title') }}</h2>
             <p>Dive into the VueJS ecosystem and discover the latest updates, tools, and best practices that are shaping the future of Vue. Whether you’re a beginner or a pro, this is the perfect place to learn, connect, and grow with the community.</p>
-            <a href="https://lu.ma/vueverse?k=c&period=past" target="_blank" class="btn btn-primary">{{ t('events.cta.button') }}</a>
+            <a href="https://luma.com/vueverse" target="_blank" class="btn btn-primary link">{{ t('events.cta.button') }}</a>
           </div>
           <div class="event-cta-image">
             <img :src="ctaImage" alt="VueVerse Event" />
@@ -154,8 +154,16 @@ const events = ref([
             <h2>{{ t('events.host.title') }}</h2>
             <p>{{ t('events.host.description') }}</p>
             <div class="host-options">
-              <a href="#" class="btn btn-primary">{{ t('events.host.speakerButton') }}</a>
-              <a href="#" class="btn btn-secondary">{{ t('events.host.venueButton') }}</a>
+                <a href="https://forms.gle/Ukkkm6RZqpkFmBts8" target="_blank" class="btn btn-primary link">{{ t('events.host.speakerButton') }}</a>
+                <!-- Open Gmail web compose with prefilled to and subject -->
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=revanthkumarpatha@gmail.com&su=Venue%20for%20VueVerse&body=Hi%20team%2C%0A%0A.%0A%0AThanks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  {{ t('events.host.venueButton') }}
+                </a>
             </div>
           </div>
           <div class="host-event-image">
@@ -168,6 +176,12 @@ const events = ref([
 </template>
 
 <style lang="scss" scoped>
+.link {
+  &:hover {
+    color: white !important;
+  }
+}
+
 .event-cta-section {
   margin-bottom: 4rem;
 }

@@ -201,7 +201,8 @@ const events = [
             Be part of a thriving ecosystem of developers and tech enthusiasts passionate about Vue.js and
             frontend excellence.
           </p>
-          <a href="https://www.linkedin.com/company/vueversehyderabad/" target="_blank" class="btn btn-primary">Join VueVerse Today</a>
+          <p><b>Vue is our Passion and It's available for all 💚</b></p>
+          <a href="https://www.linkedin.com/company/vueversehyderabad/" target="_blank" class="btn btn-primary link">Join VueVerse Today</a>
         </div>
       </div>
     </section>
@@ -242,6 +243,12 @@ const events = [
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.link {
+  &:hover {
+    color: white !important;
+  }
 }
 
 .hero-title {
