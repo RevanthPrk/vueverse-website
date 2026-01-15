@@ -35,7 +35,7 @@ const events = [
   {
     id: 3,
     title: 'VueVerse Connect 2026',
-    date: '',
+    date: '2026-02-07',
     location: 'To be announced',
     description: 'Interesting features and new releases of Vue.js it\'s ecosystem & Frontend Development.',
     image: group3
