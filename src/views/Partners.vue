@@ -3,6 +3,17 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
+// Import local partner logos so Vite bundles them
+import oneEntryLogo from '../assets/images/oneentrylogo.png'
+import thinkmatesLogo from '../assets/images/thinkmates.jpg'
+import jsloversLogo from '../assets/images/jslovers.jpg'
+import chennaiReactLogo from '../assets/images/chennaireact_logo.jpg'
+import d3Logo from '../assets/images/d3_community_logo.jpg'
+import codeOnJvmLogo from '../assets/images/codeonjvmchennai_logo.jpg'
+import cityjsIndiaLogo from '../assets/images/cityjs_india_logo.jpg'
+import cityjsConferenceLogo from '../assets/images/cityjs_conference_logo.jpg'
+import collaborateImg from '../assets/images/collaborate.png'
+
 interface Partner {
   id: number
   name: string
@@ -25,7 +36,7 @@ const partners: Partner[] = [
   {
     id: 2,
     name: 'OneEntry Headless CMS Portal',
-    logo: '../src/assets/images/oneentrylogo.png',
+    logo: oneEntryLogo,
     description: t('partners.descriptions.techvista'),
     type: 'Software Organization',
     website: 'https://oneentry.cloud/paas'
@@ -33,7 +44,7 @@ const partners: Partner[] = [
   {
     id: 3,
     name: 'ThinkMates',
-    logo: '../src/assets/images/thinkmates.jpg',
+    logo: thinkmatesLogo,
     description: t('partners.descriptions.techvista'),
     type: 'Software Organization',
     website: 'https://www.linkedin.com/company/thinkmates-edutech-pvt-ltd/'
@@ -41,7 +52,7 @@ const partners: Partner[] = [
   {
     id: 4,
     name: 'JSLovers',
-    logo: '../src/assets/images/jslovers.jpg',
+    logo: jsloversLogo,
     description: t('partners.descriptions.thub'),
     type: 'Community',
     website: 'https://jslovers.com/'
@@ -49,7 +60,7 @@ const partners: Partner[] = [
   {
     id: 5,
     name: 'ChennaiReact',
-    logo: '../src/assets/images/chennaireact_logo.jpg',
+    logo: chennaiReactLogo,
     description: t('partners.descriptions.techvista'),
     type: 'Community',
     website: 'https://www.linkedin.com/company/chennaireact/'
@@ -57,7 +68,7 @@ const partners: Partner[] = [
   {
     id: 6,
     name: 'D3 - Community',
-    logo: '../src/assets/images/d3_community_logo.jpg',
+    logo: d3Logo,
     description: t('partners.descriptions.techvista'),
     type: 'Community',
     website: 'https://www.linkedin.com/company/d3-community/'
@@ -65,7 +76,7 @@ const partners: Partner[] = [
   {
     id: 7,
     name: 'Code on JVM',
-    logo: '../src/assets/images/codeonjvmchennai_logo.jpg',
+    logo: codeOnJvmLogo,
     description: t('partners.descriptions.techvista'),
     type: 'Community',
     website: 'https://www.linkedin.com/company/codeonjvmchennai/'
@@ -73,7 +84,7 @@ const partners: Partner[] = [
   {
     id: 8,
     name: 'City JS - India',
-    logo: '../src/assets/images/cityjs_india_logo.jpg',
+    logo: cityjsIndiaLogo,
     description: t('partners.descriptions.techvista'),
     type: 'Community',
     website: 'https://www.linkedin.com/company/cityjs-india/'
@@ -81,7 +92,7 @@ const partners: Partner[] = [
   {
     id: 9,
     name: 'City JS conferences',
-    logo: '../src/assets/images/cityjs_conference_logo.jpg',
+    logo: cityjsConferenceLogo,
     description: t('partners.descriptions.techvista'),
     type: 'Community',
     website: 'https://www.linkedin.com/company/cityjs-conferences/'
@@ -181,7 +192,7 @@ const communityPartners = partners.filter(partner => partner.type === 'Community
             <a href="#" class="btn btn-primary partner-website">{{ t('partners.becomePartner.button') }}</a>
           </div>
           <div class="become-partner-image">
-            <img src="../assets/images/collaborate.png" alt="Become a VueVerse Partner" />
+            <img :src="collaborateImg" alt="Become a VueVerse Partner" />
           </div>
         </div>
       </section>

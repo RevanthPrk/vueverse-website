@@ -2,6 +2,10 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import EventCard from '../components/EventCard.vue'
+// Import images so Vite includes them in the build output
+import group1 from '../assets/images/group1.jpg'
+import group2 from '../assets/images/group2.jpg'
+import group3 from '../assets/images/3rd.jpg'
 
 const { t } = useI18n()
 
@@ -18,7 +22,7 @@ const events = [
     date: '2024-11-23',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Explore the ever-growing VueJS ecosystem. Stay updated with the latest tools, features, and innovations.',
-    image: '../src/assets/images/group1.jpg'
+    image: group1
   },
   {
     id: 2,
@@ -26,15 +30,15 @@ const events = [
     date: '2025-05-17',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Frontend Fusion brought together developers to explore the latest trends, tools, and practices in modern frontend development.',
-    image: '../src/assets/images/group2.jpg'
+    image: group2
   },
   {
     id: 3,
-    title: 'Vue + AI - Exploring the Future',
+    title: 'VueVerse Connect 2026',
     date: '',
-    location: 'T-Hub Phase 2, Hyderabad',
-    description: 'Intersection of Vue.js and Artificial Intelligence. Discover how AI can transform the way we build, optimize, and scale Vue applications',
-    image: '../src/assets/images/3rd.jpg'
+    location: 'To be announced',
+    description: 'Interesting features and new releases of Vue.js it\'s ecosystem & Frontend Development.',
+    image: group3
   }
 ]
 </script>

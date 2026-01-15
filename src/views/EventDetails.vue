@@ -51,6 +51,34 @@
 import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import Slider from './Slider.vue';
+// Import local images so Vite will bundle them for production
+import group1 from '../assets/images/group1.jpg'
+import firstImg from '../assets/images/1st.jpg'
+import firstImage from '../assets/images/1stimage.jpg'
+import firstMeetup from '../assets/images/1stmeetup.jpg'
+import speakers1Img from '../assets/images/speakers1.jpg'
+import ariqtSponsor from '../assets/images/ariqt sponsor.jpg'
+import ariqt2 from '../assets/images/ariqt2.jpg'
+import thub1 from '../assets/images/thub1.jpg'
+import collegeFirst from '../assets/images/college 1st.jpg'
+import friendFirst from '../assets/images/friend1st.jpg'
+
+import group2 from '../assets/images/group2.jpg'
+import secondImg from '../assets/images/2nd.jpg'
+import speakers2Img from '../assets/images/speakers2.jpg'
+import oneEntry from '../assets/images/oneentry.jpg'
+import collaborators2Img from '../assets/images/collaborators2.jpg'
+import stickersImg from '../assets/images/stickers.jpg'
+
+import kondiImg from '../assets/images/kondi.jpg'
+import sumanth2Img from '../assets/images/sumanth2.jpeg'
+import kiranImg from '../assets/images/kiran.jpg'
+import jyothiImg from '../assets/images/jyothi.jpg'
+import aravindImg from '../assets/images/aravind.jpg'
+import jagadeeshImg from '../assets/images/jagadeesh.jpg'
+import quantanaImg from '../assets/images/quantana.jpg'
+import udhayaImg from '../assets/images/udhaya.jpeg'
+import thirdImg from '../assets/images/3rd.jpg'
 
 const route = useRoute()
 // const router = useRouter()
@@ -79,17 +107,17 @@ const events = ref<Event[]>([
     date: '2024-11-23',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Explore the ever-growing VueJS ecosystem. Stay updated with the latest tools, features, and innovations.',
-    image: '../src/assets/images/group1.jpg',
+    image: group1,
     images: [
-      '../src/assets/images/1st.jpg',
-      '../src/assets/images/1stimage.jpg',
-      '../src/assets/images/1stmeetup.jpg',
-      '../src/assets/images/speakers1.jpg',
-      '../src/assets/images/ariqt sponsor.jpg',
-      '../src/assets/images/ariqt2.jpg',
-      '../src/assets/images/thub1.jpg',
-      '../src/assets/images/college 1st.jpg',
-      '../src/assets/images/friend1st.jpg',
+      firstImg,
+      firstImage,
+      firstMeetup,
+      speakers1Img,
+      ariqtSponsor,
+      ariqt2,
+      thub1,
+      collegeFirst,
+      friendFirst,
     ],
     speakers: [
         {
@@ -97,7 +125,7 @@ const events = ref<Event[]>([
             name: 'Kondi Venkatesh',
             title: 'Why Every Developer needs Vitest',
             description: 'Expert in Vue.js and its ecosystem.',
-            image: '../../src/assets/images/kondi.jpg',
+            image: kondiImg,
             social: 'https://www.linkedin.com/in/venkatesh-kondi-50890322b/'
         },
         {
@@ -105,7 +133,7 @@ const events = ref<Event[]>([
             name: 'Sumanth Thallapelly',
             title: 'Introduction to Storybook',
             description: 'Specializes in modern JavaScript frameworks.',
-            image: '../../src/assets/images/sumanth2.jpeg',
+            image: sumanth2Img,
             social: 'https://www.linkedin.com/in/sumanth469/'
         },
         {
@@ -113,7 +141,7 @@ const events = ref<Event[]>([
             name: 'Kiran Kumar Challagiri',
             title: 'Mastering Vue JS Foundations',
             description: 'Passionate about creating intuitive user experiences.',
-            image: '../../src/assets/images/kiran.jpg',
+            image: kiranImg,
             social: 'https://www.linkedin.com/in/kirankumar3117/'
         },
         {
@@ -121,7 +149,7 @@ const events = ref<Event[]>([
             name: 'Hithesh SVSK',
             title: 'VueVolution - Migrate from Vue2 to Vue3',
             description: 'Skilled in building robust server-side applications.',
-            image: '../../src/assets/images/speakers1.jpg',
+            image: speakers1Img,
             social: 'https://www.linkedin.com/in/sunkara-hithesh-naidu-26826717b/'
         },
         {
@@ -140,15 +168,15 @@ const events = ref<Event[]>([
     date: '2025-05-17',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Frontend Fusion brought together developers to explore the latest trends, tools, and practices in modern frontend development.',
-    image: '../src/assets/images/group2.jpg',
+    image: group2,
     images: [
-      '../src/assets/images/2nd.jpg',
-      '../src/assets/images/speakers2.jpg',
-      '../src/assets/images/oneentry.jpg',
-      '../src/assets/images/collaborators2.jpg',
-      '../src/assets/images/stickers.jpg',
-      '../src/assets/images/thub1.jpg',
-      '../src/assets/images/group2.jpg',
+      secondImg,
+      speakers2Img,
+      oneEntry,
+      collaborators2Img,
+      stickersImg,
+      thub1,
+      group2,
     ],
     speakers: [
         {
@@ -156,7 +184,7 @@ const events = ref<Event[]>([
             name: 'Jyothi Prakash',
             title: 'Wait... JavaScript Can do it..?',
             description: 'Expert in Vue.js and its ecosystem.',
-            image: '../src/assets/images/jyothi.jpg',
+            image: jyothiImg,
             social: 'https://www.linkedin.com/in/jyothi-prakash-1324a61b3/'
         },
         {
@@ -164,7 +192,7 @@ const events = ref<Event[]>([
             name: 'Aravind Kumar J',
             title: 'React Reconciliation: The Hidden Engine Behind Your Components.',
             description: 'Specializes in modern JavaScript frameworks.',
-            image: '../src/assets/images/aravind.jpg',
+            image: aravindImg,
             social: 'https://www.linkedin.com/in/mjagadeeshwaran/'
         },
         {
@@ -172,7 +200,7 @@ const events = ref<Event[]>([
             name: 'Jagadeeshwaran M',
             title: 'Modern Vue JS: Accelerating development with a Headless approach and Jamstack using OneEntry',
             description: 'Passionate about creating intuitive user experiences.',
-            image: '../src/assets/images/jagadeesh.jpg',
+            image: jagadeeshImg,
             social: 'https://www.linkedin.com/in/mjagadeeshwaran/'
         },
         {
@@ -180,7 +208,7 @@ const events = ref<Event[]>([
             name: 'Ramesh Emandi',
             title: 'Modern Frontend Engineering: Tools, Techniques and Best Practices',
             description: 'Skilled in building robust server-side applications.',
-            image: '../src/assets/images/quantana.jpg',
+            image: quantanaImg,
             social: 'https://www.linkedin.com/in/rameshemandi/'
         },
         {
@@ -188,7 +216,7 @@ const events = ref<Event[]>([
             name: 'UdhayaPrakash V',
             title: 'Slashing Cloud Costs in Half: A Real-World Success Story with Vercel',
             description: 'Expert in CI/CD and cloud infrastructure.',
-            image: '../src/assets/images/udhaya.jpeg',
+            image: udhayaImg,
             social: 'https://www.linkedin.com/in/udhayaprakasha-v-a71975a0/'
         }
     ]
@@ -199,7 +227,7 @@ const events = ref<Event[]>([
     date: '',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Intersection of Vue.js and Artificial Intelligence. Discover how AI can transform the way we build, optimize, and scale Vue applications.',
-    image: '../src/assets/images/3rd.jpg',
+    image: thirdImg,
     images: [],
     speakers: []
   }

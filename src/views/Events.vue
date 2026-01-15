@@ -2,6 +2,11 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import EventCard from '../components/EventCard.vue'
+// Import local images so Vite will bundle them for production
+import group1 from '../assets/images/group1.jpg'
+import group2 from '../assets/images/group2.jpg'
+import group3 from '../assets/images/3rd.jpg'
+import ctaImage from '../assets/images/image.png'
 
 const { t } = useI18n()
 
@@ -13,7 +18,7 @@ const events = ref([
     date: '2024-11-23',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Explore the ever-growing VueJS ecosystem. Stay updated with the latest tools, features, and innovations.',
-    image: '../src/assets/images/group1.jpg'
+    image: group1
   },
   {
     id: 2,
@@ -21,7 +26,7 @@ const events = ref([
     date: '2025-05-17',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Frontend Fusion brought together developers to explore the latest trends, tools, and practices in modern frontend development.',
-    image: '../src/assets/images/group2.jpg'
+    image: group2
   },
   {
     id: 3,
@@ -29,7 +34,7 @@ const events = ref([
     date: '',
     location: 'T-Hub Phase 2, Hyderabad',
     description: 'Intersection of Vue.js and Artificial Intelligence. Discover how AI can transform the way we build, optimize, and scale Vue applications.',
-    image: '../src/assets/images/3rd.jpg'
+    image: group3
   }
 ])
 
@@ -105,7 +110,7 @@ const events = ref([
             <a href="https://lu.ma/vueverse?k=c&period=past" target="_blank" class="btn btn-primary">{{ t('events.cta.button') }}</a>
           </div>
           <div class="event-cta-image">
-            <img src="../assets/images/image.png" alt="VueVerse Event" />
+            <img :src="ctaImage" alt="VueVerse Event" />
           </div>
         </div>
       </section>
