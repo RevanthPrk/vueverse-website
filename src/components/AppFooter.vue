@@ -85,7 +85,7 @@ const currentYear = ref(new Date().getFullYear());
 
       <div class="footer-bottom">
         <p>&copy; {{ currentYear }} VueVerse. All rights reserved.</p>
-        <p>Vue is our Passion and It's available for all 💚</p>
+        <p>Learn. Build. Share. Vue.💚</p>
         <div class="social-links">
           <a
             href="https://chat.whatsapp.com/FDZGo3bOoy9CLNrqb1pp0w"
