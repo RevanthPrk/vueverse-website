@@ -6,6 +6,7 @@ import AppFooter from './components/AppFooter.vue'
 
 const route = useRoute()
 const pageTitle = ref('VueVerse')
+const showPersistentDownload = false
 
 watchEffect(() => {
   // Update page title based on route
@@ -25,6 +26,7 @@ watchEffect(() => {
     <AppHeader />
     <!-- Persistent download button visible across all routes -->
     <a
+      v-if="showPersistentDownload"
       class="persistent-download"
       href="/VueVerse_2026_Vision_and_Objectives.pdf"
       download="2026-VueVerse-Plan.pdf"

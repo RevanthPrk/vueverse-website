@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import EventCard from '../components/EventCard.vue'
 // Import images so Vite includes them in the build output
@@ -13,6 +13,36 @@ const { t } = useI18n()
 const memberCount = ref(540)
 const eventsHosted = ref(2)
 const hoursOfContent = ref(50)
+
+const chatbotScriptId = 'vueverse-chatbot-widget-script'
+
+const mountChatbotScript = () => {
+  if (document.getElementById(chatbotScriptId)) {
+    return
+  }
+
+  const script = document.createElement('script')
+  script.id = chatbotScriptId
+  script.src = 'https://kalyanlabhishetty.vercel.app/vueverse-chatbot-widget.js'
+  script.defer = true
+  script.setAttribute('data-base-url', 'https://kalyanlabhishetty.vercel.app')
+  script.setAttribute('data-position', 'right')
+  script.setAttribute('data-title', 'Ask Vueverse AI')
+
+  document.body.appendChild(script)
+}
+
+const unmountChatbotScript = () => {
+  document.getElementById(chatbotScriptId)?.remove()
+}
+
+onMounted(() => {
+  mountChatbotScript()
+})
+
+onBeforeUnmount(() => {
+  unmountChatbotScript()
+})
 
 // Featured events (would typically come from an API/database)
 const events = [
