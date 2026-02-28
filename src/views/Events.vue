@@ -2,11 +2,22 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import EventCard from '../components/EventCard.vue'
+import Slider from './Slider.vue'
 // Import local images so Vite will bundle them for production
 import group1 from '../assets/images/group1.jpg'
 import group2 from '../assets/images/group2.jpg'
-import group3 from '../assets/images/3rd.jpg'
+import group3 from '../assets/images/3meet1.jpeg'
 import ctaImage from '../assets/images/image.png'
+
+import city1 from '../assets/images/city1.jpeg'
+import city2 from '../assets/images/city2.jpeg'
+import city3 from '../assets/images/city3.jpeg'
+import cityjs1 from '../assets/images/cityjs1.jpeg'
+import cityjs2 from '../assets/images/cityjs2.jpeg'
+import cityjs3 from '../assets/images/cityjs3.jpeg'
+import cityjs4 from '../assets/images/cityjs4.jpeg'
+import cityjs5 from '../assets/images/cityjs5.jpeg'
+import cityjs6 from '../assets/images/cityjs6.jpeg'
 
 const { t } = useI18n()
 
@@ -32,11 +43,23 @@ const events = ref([
     id: 3,
     title: 'VueVerse Connect 2026',
     date: '2026-02-07',
-    location: 'To be announced',
-    description: 'Interesting features and new releases of Vue.js it\'s ecosystem & Frontend Development.',
+    location: 'Draper\'s Startup House Hyderabad',
+    description: 'Interesting features and releases of Frontend Development.',
     image: group3
   }
 ])
+
+const cityjsconf = [
+  city1,
+  city2,
+  city3,
+  cityjs1,
+  cityjs2,
+  cityjs3,
+  cityjs4,
+  cityjs5,
+  cityjs6
+]
 
 // Past events
 // const pastEvents = ref([
@@ -134,6 +157,9 @@ const events = ref([
           </div>
         </div>
       </section>
+
+      <h2 class="section-title mt-2">City JS - AI Powered JavaScript Powered (New Delhi)</h2>
+      <Slider :images="cityjsconf || []" v-if="cityjsconf?.length" />
       
       <!-- Past Events -->
       <!-- <section class="section">

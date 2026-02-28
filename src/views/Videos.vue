@@ -6,6 +6,8 @@ const { t } = useI18n()
 // Import local thumbnails so Vite bundles them
 import talkImg from '../assets/images/talk.png'
 import viteThumbnail from '../assets/images/vite-thumbnail.jpg'
+import abhilashtalk from '../assets/images/abhilash-talk.jpg'
+import vueperformance from '../assets/images/vueperformancetalk.png'
 
 interface Video {
   id: string
@@ -73,6 +75,25 @@ const videos: Video[] = [
     duration: '41:05',
     video: 'https://www.youtube.com/watch?v=gOffFaYUxms&t=1s'
   },
+   {
+    id: 'LLFys7v-l3c',  // placeholder ID
+    title: 'Vue.js Talks- Vue Performance Optimization + GitLab’s Vue 2 → Vue 3 Journey',
+    description: 'A practical talk about improving performance across the whole pipeline — not only rendering, but also assets, network delivery, bundling, and build-time decisions. why the migration matters, what challenges appeared, and what patterns helped make the transition manageable.',
+    thumbnail: vueperformance, 
+    date: '2026-02-18',
+    duration: '01:36:05',
+    video: 'https://youtu.be/9oyKz3uOt7g?si=xeIuTQzJhqHT9dtd'
+  },
+  {
+    id: 'LLFys7v-l3c',  // placeholder ID
+    title: 'Founder of PayGo.fit (Abhilash D) - Build a product with just a Idea and AI at VueVerse Connect 2026',
+    description: 'Build any product from scratch, idea to launch no need to wait for anything',
+    thumbnail: abhilashtalk,
+    date: '2026-02-07',
+    duration: '44:05',
+    video: 'https://youtu.be/9oyKz3uOt7g?si=xeIuTQzJhqHT9dtd'
+  },
+
 ]
 
 // Format date for display

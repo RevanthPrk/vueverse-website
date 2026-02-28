@@ -79,6 +79,18 @@ import jagadeeshImg from '../assets/images/jagadeesh.jpg'
 import quantanaImg from '../assets/images/quantana.jpg'
 import udhayaImg from '../assets/images/udhaya.jpeg'
 import thirdImg from '../assets/images/3rd.jpg'
+import keshavImg from '../assets/images/keshav.jpg'
+import keshavRajImg from '../assets/images/keshavraj.jpg'
+import abhilashImg from '../assets/images/abhilash.jpeg'
+
+import meet3 from '../assets/images/3meet.jpeg'
+import meet31 from '../assets/images/3meet1.jpeg'
+import meet32 from '../assets/images/3meet2.jpeg'
+import meet33 from '../assets/images/3meet3.jpeg'
+import meet34 from '../assets/images/3meet4.jpeg'
+import meet35 from '../assets/images/3meet5.jpeg'
+import meet36 from '../assets/images/3meet6.jpeg'
+import vueverseConnect from '../assets/images/vueverseConnect.jpg'
 
 const route = useRoute()
 // const router = useRouter()
@@ -225,11 +237,52 @@ const events = ref<Event[]>([
     id: 3,
     title: 'VueVerse Connect 2026',
     date: '2026-02-07',
-    location: 'To be announced',
-    description: 'Interesting features and new releases of Vue.js it\'s ecosystem & Frontend Development.',
-    image: thirdImg,
-    images: [],
-    speakers: []
+    location: 'Draper\'s Startup House Hyderabad',
+    description: 'Interesting features and releases of Frontend Development.',
+    image: meet31,
+    images: [
+      meet31,
+      meet32,
+      meet33,
+      meet34,
+      meet35,
+      meet36,
+      meet3,
+    ],
+    speakers: [
+        {
+            id: 1,
+            name: 'Kiran Kumar Challagiri',
+            title: 'Real-World Product Building Case Study',
+            description: 'clear, practical understanding of the end-to-end product development process, using real scenarios and decisions that happen in actual projects',
+            image: kiranImg,
+            social: 'https://www.linkedin.com/in/kirankumar3117/'
+        },
+        {
+            id: 2,
+            name: 'Keshav Mohta',
+            title: 'GitHub Actions: Real Use Cases and best practices',
+            description: 'It\'s about GitHub Actions and how can we learn and apply in our repo.',
+            image: keshavImg,
+            social: 'https://www.linkedin.com/in/xkeshav/'
+        },
+        {
+            id: 3,
+            name: 'Abhilash D',
+            title: 'PayGo.fit and how it was built from just an Idea',
+            description: 'Build any product from scratch, idea to launch no need to wait for anything',
+            image: abhilashImg,
+            social: 'https://www.linkedin.com/in/abhilash-dharavath/'
+        },
+        {
+            id: 4,
+            name: 'Keshav Raj',
+            title: 'Unknown things about WebComponents',
+            description: 'Work with Web Components, and how they can be used to create reusable UI elements that work across different frameworks and libraries.',
+            image: keshavRajImg,
+            social: 'https://www.linkedin.com/in/k-e-s-h-a-v/'
+        },
+    ]
   }
 ])
 
