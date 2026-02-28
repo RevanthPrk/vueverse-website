@@ -78,7 +78,7 @@ import aravindImg from '../assets/images/aravind.jpg'
 import jagadeeshImg from '../assets/images/jagadeesh.jpg'
 import quantanaImg from '../assets/images/quantana.jpg'
 import udhayaImg from '../assets/images/udhaya.jpeg'
-import thirdImg from '../assets/images/3rd.jpg'
+
 import keshavImg from '../assets/images/keshav.jpg'
 import keshavRajImg from '../assets/images/keshavraj.jpg'
 import abhilashImg from '../assets/images/abhilash.jpeg'
@@ -90,7 +90,6 @@ import meet33 from '../assets/images/3meet3.jpeg'
 import meet34 from '../assets/images/3meet4.jpeg'
 import meet35 from '../assets/images/3meet5.jpeg'
 import meet36 from '../assets/images/3meet6.jpeg'
-import vueverseConnect from '../assets/images/vueverseConnect.jpg'
 
 const route = useRoute()
 // const router = useRouter()
