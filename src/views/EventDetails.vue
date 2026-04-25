@@ -91,6 +91,14 @@ import meet34 from '../assets/images/3meet4.jpeg'
 import meet35 from '../assets/images/3meet5.jpeg'
 import meet36 from '../assets/images/3meet6.jpeg'
 
+import meetup4 from '../assets/images/meetup4.jpg'
+import yusuf from '../assets/images/yusuf.jpg'
+import nerando from '../assets/images/nerando.jpg'
+import johnleider from '../assets/images/johnleider.jpg'
+import johnposter from '../assets/images/johnposter.jpg'
+import nerandoposter from '../assets/images/nerandoposter.jpg'
+import yusufposter from '../assets/images/yusufposter.jpg'
+
 const route = useRoute()
 // const router = useRouter()
 type Event = {
@@ -280,6 +288,46 @@ const events = ref<Event[]>([
             description: 'Work with Web Components, and how they can be used to create reusable UI elements that work across different frameworks and libraries.',
             image: keshavRajImg,
             social: 'https://www.linkedin.com/in/k-e-s-h-a-v/'
+        },
+    ]
+  },
+  {
+    id: 4,
+    title: 'VueVerse Global Connect',
+    date: '2026-04-25',
+    location: 'Online Meetup',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: meetup4,
+    images: [
+      meetup4,
+      yusufposter,
+      nerandoposter,
+      johnposter,
+    ],
+    speakers: [
+        {
+            id: 1,
+            name: 'Yusuf Shehu',
+            title: 'The Simplicity of Vue.js (Even at Scale)',
+            description: 'Core design principles behind Vue, Composition API & Composables in real-world use, Building scalable applications without unnecessary complexity, Patterns to keep large codebases clean, maintainable & efficient',
+            image: yusuf,
+            social: 'https://www.linkedin.com/in/yusufshehu/'
+        },
+        {
+            id: 2,
+            name: 'Nerando Johnson',
+            title: 'Back to Basics: Essential JavaScript Foundations for Modern Framework Development',
+            description: 'Why strong JavaScript fundamentals matter more than ever, How core JS concepts power modern frameworks like Vue, Real-world insights from transitioning into Vue3, Best practices for long-term growth as a developer',
+            image: nerando,
+            social: 'https://www.linkedin.com/in/nerando-johnson/'
+        },
+        {
+            id: 3,
+            name: 'John Leider',
+            title: 'Vuetify goes Headless',
+            description: 'The evolution of Vuetify into a headless architecture, How composables are reshaping UI development, Building flexible, scalable design systems, A new approach to creating UI libraries without tight coupling',
+            image: johnleider,
+            social: 'https://www.linkedin.com/in/abhilash-dharavath/'
         },
     ]
   }

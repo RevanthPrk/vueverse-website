@@ -18,6 +18,7 @@ import cityjs3 from '../assets/images/cityjs3.jpeg'
 import cityjs4 from '../assets/images/cityjs4.jpeg'
 import cityjs5 from '../assets/images/cityjs5.jpeg'
 import cityjs6 from '../assets/images/cityjs6.jpeg'
+import meetup4 from '../assets/images/meetup4.jpg'
 
 const { t } = useI18n()
 
@@ -46,6 +47,14 @@ const events = ref([
     location: 'Draper\'s Startup House Hyderabad',
     description: 'Interesting features and releases of Frontend Development.',
     image: group3
+  },
+  {
+    id: 4,
+    title: 'VueVerse Global Connect',
+    date: '2026-04-25',
+    location: 'Online Meetup',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: meetup4
   }
 ])
 

@@ -123,7 +123,7 @@ export default {
         writer: 'Technical Content Writers',
         instructor: 'Workshop Instructors',
         planner: 'Event Planners & Coordinators',
-        manager: 'Social Media & Community Managers'
+        manager: 'Open Source Contributors'
       },
       button: 'Apply to Join'
     }

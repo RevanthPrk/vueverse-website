@@ -5,6 +5,13 @@ export const useArticlesStore = defineStore('articles', () => {
 
   const articles = ref([
     {
+      id: 15,
+      title: 'Performance Optimization in Vue.js, from every Byte to build',
+      Author: 'Revanth Kumar Patha',
+      linkedIn: 'https://www.linkedin.com/in/revanth-kumar-9246841a0/',
+      url: 'https://medium.com/@revanthkumarpatha/performance-optimization-in-vue-js-from-every-byte-to-build-c0a74b3d3382'
+    },
+    {
       id: 13,
       title: 'Mastering Vue 3.6’s Alien Signals: Practical Examples and Use Cases',
       Author: 'Revanth Kumar Patha',

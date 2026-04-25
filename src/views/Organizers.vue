@@ -161,7 +161,7 @@ const organizers: Organizer[] = [
                 <span><b>{{ t('organizers.joinTeam.roles.manager') }}</b></span>
               </li>
             </ul>
-            <a href="https://forms.gle/JZ1innfA2WYiUTCj9" target="_blank" class="btn btn-primary link">{{ t('organizers.joinTeam.button') }}</a>
+            <a href="https://forms.gle/bfrrJydAmxnbKurd7" target="_blank" class="btn btn-primary link">{{ t('organizers.joinTeam.button') }}</a>
           </div>
           <div class="join-team-image">
             <img :src="joinImg" alt="Join the VueVerse Team" />
