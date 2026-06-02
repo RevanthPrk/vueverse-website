@@ -8,12 +8,14 @@ import group2 from '../assets/images/group2.jpg'
 import group3 from '../assets/images/3meet1.jpeg'
 
 import meetup4 from '../assets/images/meetup4.jpg'
+import onlinemeetup2 from '../assets/images/onlinemeetup2.jpg'
+import onlinemeetup3 from '../assets/images/onlinemeetup3.png'
 
 const { t } = useI18n()
 
 // Community stats
 const memberCount = ref(620)
-const eventsHosted = ref(3)
+const eventsHosted = ref(6)
 const hoursOfContent = ref(50)
 
 const chatbotScriptId = 'vueverse-chatbot-widget-script'
@@ -74,11 +76,27 @@ const events = [
   },
     {
     id: 4,
-    title: 'VueVerse Global Connect',
+    title: 'VueVerse Global Connect 1',
     date: '2026-04-25',
     location: 'Online Meetup',
     description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
     image: meetup4
+  },
+  {
+    id: 5,
+    title: 'VueVerse Global Connect 2',
+    date: '2026-05-23',
+    location: 'Online Meetup',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: onlinemeetup2
+  },
+  {
+    id: 6,
+    title: 'VueVerse Global Connect 3',
+    date: '2026-07-07',
+    location: 'Online Meetup',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: onlinemeetup3
   }
 ]
 </script>

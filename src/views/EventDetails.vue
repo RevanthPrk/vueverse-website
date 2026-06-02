@@ -99,6 +99,17 @@ import johnposter from '../assets/images/johnposter.jpg'
 import nerandoposter from '../assets/images/nerandoposter.jpg'
 import yusufposter from '../assets/images/yusufposter.jpg'
 
+import onlinemeetup2 from '../assets/images/onlinemeetup2.jpg'
+import onlinemeetup3 from '../assets/images/onlinemeetup3.png'
+import evyatar from '../assets/images/evyatar.jpg'
+import rayan from '../assets/images/rayan.jpg'
+import nicodevs from '../assets/images/nicodevs.png'
+import faris from '../assets/images/faris.jpg'
+import evyatarmeet from '../assets/images/evyatarmeet.jpeg'
+import rayanmeet from '../assets/images/rayanmeet.jpeg'
+import rayanpic from '../assets/images/rayanpic.jpg'
+import evyatarpic from '../assets/images/evyatarpic.jpg'
+
 const route = useRoute()
 // const router = useRouter()
 type Event = {
@@ -328,6 +339,76 @@ const events = ref<Event[]>([
             description: 'The evolution of Vuetify into a headless architecture, How composables are reshaping UI development, Building flexible, scalable design systems, A new approach to creating UI libraries without tight coupling',
             image: johnleider,
             social: 'https://www.linkedin.com/in/abhilash-dharavath/'
+        },
+    ]
+  },
+  {
+    id: 5,
+    title: 'VueVerse Global Connect 2',
+    date: '2026-05-23',
+    location: 'Online Meetup',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: onlinemeetup2,
+    images: [
+      onlinemeetup2,
+      evyatarmeet,
+      rayanmeet,
+      evyatar,
+      rayan,
+    ],
+    speakers: [
+        {
+            id: 1,
+            name: 'Evyatar Alush',
+            title: 'Hold on to your Vest! Form validation for the stranded time traveler',
+            description: 'Form validation is the necessary evil of the web. For decades, we\'ve tangled our business logic with our UI state, resulting in forms that scream errors at users before they\'ve even finished typing. But what if your validation framework could time travel? In this talk, we’ll explore and live code with Vest V6, a framework that borrows the declarative syntax of unit testing and applies it to your data. We\'ll dive deep into its architecture, and see how it reaches into the past to preserve validation state, natively eliminating async race conditions and complex cleanup logic. Join me for a live coding session as we fight the bureaucracy of Time Travel, and learn how to write universally portable, form validations that will take us to the future, and hopefully making it back in time for lunch.',
+            image: evyatar,
+            social: 'https://www.linkedin.com/in/evyataralush/'
+        },
+        {
+            id: 2,
+            name: 'Rayan Azzam',
+            title: 'Can AI Build Vue Components You Can Actually Ship?',
+            description: 'AI can generate Vue components quickly, but can we trust that code in real production projects? In this talk, I’ll explore a practical workflow for using AI agents to turn designs into Vue components, then validate the output with testing, code quality checks, and team guardrails. We’ll look at where AI helps, where it fails, and how developers can make AI-generated frontend code safer, cleaner, and actually shippable.',
+            image: rayan,
+            social: 'https://www.linkedin.com/in/rayan-azzam/'
+        },
+    ]
+  },
+  {
+    id: 6,
+    title: 'VueVerse Global Connect 3',
+    date: '2026-07-07',
+    location: 'Online Meetup',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: onlinemeetup3,
+    images: [
+      onlinemeetup3,
+    ],
+    speakers: [
+        {
+            id: 1,
+            name: 'Faris Aziz',
+            title: 'Caching, Payloads, and Other Dark Arts: Optimizing UX in Suboptimal Conditions',
+            description: 'This talk breaks down real world data fetching challenges at scale and how to solve them with modern patterns like the BFF layer, granular payload shaping, prefetching, and critical versus optimal queries. We walk through progressively improving an architecture that starts with five parallel client side requests against a bloated API, then move the work to a proxy handler, and finally to a fully optimized TanStack Query setup with server prefetching and resilient fallbacks. All demos were recorded on a long haul flight using in flight WiFi, showing how these patterns behave under real latency, unstable bandwidth, and failure conditions. The goal is to prove that these techniques are not academic. They directly affect reliability, performance, and user experience in harsh environments where debugging, caching strategy, and payload discipline make or break your product.',
+            image: faris,
+            social: 'https://www.linkedin.com/in/farisaziz12/'
+        },
+        {
+            id: 2,
+            name: 'Nico devs',
+            title: 'Back to Basics: Essential JavaScript Foundations for Modern Framework Development',
+            description: 'In this talk, I\'ll share the setup I use to get the most out of the coding agent: rules, skills, MCPs, and techniques that speed up development and improve the quality of the code it produces. We\'ll set up an AI-powered development environment that understands Vue and Nuxt: their conventions, their composables, their auto-imports, and their module ecosystem. We\'ll wire up Claude Code with project-aware context, configure rules and instructions that match Vue and Nuxt, and connect MCP servers for Nuxt docs, component libraries, and live browser feedback.',
+            image: nicodevs,
+            social: 'https://www.linkedin.com/in/nicodevs/'
+        },
+        {
+            id: 3,
+            name: 'Looking for Speakers',
+            title: 'Looking for Speakers',
+            description: 'We are looking for speakers for our upcoming VueVerse Global Connect 3 event. If you have expertise in Vue.js, frontend development, or related topics and would like to share your knowledge with our community, please reach out to us!',
+            image: onlinemeetup3,
+            social: ''
         },
     ]
   }
