@@ -395,7 +395,7 @@ const events = ref<Event[]>([
         {
             id: 2,
             name: 'Nico devs',
-            title: 'Back to Basics: Essential JavaScript Foundations for Modern Framework Development',
+            title: 'Agentic Coding for Vue & Nuxt Apps with Vue Vapour Examples',
             description: 'In this talk, I\'ll share the setup I use to get the most out of the coding agent: rules, skills, MCPs, and techniques that speed up development and improve the quality of the code it produces. We\'ll set up an AI-powered development environment that understands Vue and Nuxt: their conventions, their composables, their auto-imports, and their module ecosystem. We\'ll wire up Claude Code with project-aware context, configure rules and instructions that match Vue and Nuxt, and connect MCP servers for Nuxt docs, component libraries, and live browser feedback.',
             image: nicodevs,
             social: 'https://www.linkedin.com/in/nicodevs/'
