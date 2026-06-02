@@ -107,8 +107,6 @@ import nicodevs from '../assets/images/nicodevs.png'
 import faris from '../assets/images/faris.jpg'
 import evyatarmeet from '../assets/images/evyatarmeet.jpeg'
 import rayanmeet from '../assets/images/rayanmeet.jpeg'
-import rayanpic from '../assets/images/rayanpic.jpg'
-import evyatarpic from '../assets/images/evyatarpic.jpg'
 
 const route = useRoute()
 // const router = useRouter()
