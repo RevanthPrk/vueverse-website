@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
 interface EventProps {
   event: {
@@ -15,61 +16,287 @@ interface EventProps {
 
 const props = defineProps<EventProps>()
 const { t } = useI18n()
+const router = useRouter()
 
 // Format date for display
 const formattedDate = computed(() => {
   if(props.event.date) {
-const date = new Date(props.event.date)
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  }).format(date)
+    const date = new Date(props.event.date)
+    return new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }).format(date)
   } else return 'Upcoming event...'
 })
+
+// Handle view details button
+const viewEventDetails = () => {
+  router.push({
+    name: 'event-details',
+    params: { id: props.event.id }
+  })
+}
+
+// Handle register button
+const registerForEvent = () => {
+  console.log('Register for event:', props.event.id)
+  // Add your registration logic here
+}
 </script>
 
 <template>
   <div class="event-card">
-    <div class="event-image">
-      <img :src="event.image" :alt="event.title">
-      <div class="event-date">{{ formattedDate }}</div>
+    <!-- Event Image -->
+    <div class="event-image-container">
+      <img 
+        :src="props.event.image" 
+        :alt="props.event.title"
+        class="event-image"
+      />
+      <div class="image-overlay"></div>
     </div>
+
+    <!-- Card Content -->
     <div class="event-content">
-      <h3 class="event-title">{{ event.title }}</h3>
-      <div class="event-location">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-        {{ event.location }}
+      <!-- Event Date & Location -->
+      <div class="event-meta">
+        <div class="meta-item date-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <span class="date-text">{{ formattedDate }}</span>
+        </div>
+        <div class="meta-item location-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span class="location-text">{{ props.event.location }}</span>
+        </div>
       </div>
-      <p class="event-description">{{ event.description }}</p>
-      <div class="event-actions">
-        <router-link :to="`/events/${event.id}`" class="btn-details">{{ t('events.viewDetails') }}</router-link>
-        <a href="https://luma.com/vueverse" class="btn-register">{{ t('events.register') }}</a>
+
+      <!-- Event Title -->
+      <h3 class="event-title">{{ props.event.title }}</h3>
+
+      <!-- Event Description -->
+      <p class="event-description">{{ props.event.description }}</p>
+
+      <!-- Action Buttons -->
+      <div class="button-group">
+        <button 
+          class="btn btn-primary"
+          @click="viewEventDetails"
+        >
+          View Details
+        </button>
+        <button 
+          class="btn btn-secondary"
+          @click="registerForEvent"
+        >
+          Register
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+// Theme Colors
+$primary-color: #42b883;
+$secondary-color: #35495e;
+$neutral-100: #f8f9fa;
+$neutral-200: #e9ecef;
+$neutral-600: #6c757d;
+$neutral-700: #495057;
+$neutral-900: #212529;
+$shadow-light: rgba(0, 0, 0, 0.05);
+$shadow-medium: rgba(0, 0, 0, 0.1);
+$shadow-hover: rgba(0, 0, 0, 0.15);
+
 .event-card {
-  background-color: white;
-  border-radius: 8px;
+  background-color: #ffffff;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px $shadow-light;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
   display: flex;
   flex-direction: column;
-  
+  position: relative;
+  z-index: 1;
+
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    
-    .event-image img {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px $shadow-hover;
+    z-index: 2;
+
+    .event-image {
       transform: scale(1.05);
+    }
+
+    .btn-primary {
+      background-color: darken($primary-color, 8%);
+      box-shadow: 0 4px 12px rgba($primary-color, 0.3);
+    }
+
+    .btn-secondary {
+      color: $primary-color;
+      border-color: $primary-color;
     }
   }
 }
+
+// Image Container
+.event-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, $neutral-200 0%, $neutral-100 100%);
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba($secondary-color, 0.15) 0%, rgba($primary-color, 0.1) 100%);
+  pointer-events: none;
+}
+
+// Content Section
+.event-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+// Meta Information (Date & Location)
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $neutral-200;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: $neutral-600;
+
+  svg {
+    color: $primary-color;
+    flex-shrink: 0;
+  }
+}
+
+.date-text,
+.location-text {
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+// Title
+.event-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $secondary-color;
+  margin: 0.75rem 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Description
+.event-description {
+  font-size: 0.95rem;
+  color: $neutral-700;
+  line-height: 1.6;
+  margin: 0.5rem 0 1.25rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+// Button Group
+.button-group {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+// Buttons
+.btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 5%) 100%);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 8px rgba($primary-color, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba($primary-color, 0.3);
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: rgba($secondary-color, 0.05);
+    border-color: $primary-color;
+  }
+}
+
 
 .event-image {
   position: relative;

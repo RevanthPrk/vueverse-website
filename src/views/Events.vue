@@ -20,7 +20,9 @@ import cityjs5 from '../assets/images/cityjs5.jpeg'
 import cityjs6 from '../assets/images/cityjs6.jpeg'
 import meetup4 from '../assets/images/meetup4.jpg'
 import onlinemeetup2 from '../assets/images/onlinemeetup2.jpg'
-import onlinemeetup3 from '../assets/images/onlinemeetup3.png'
+import julymeetup from "../assets/images/julymeet.jpg"
+import augmeet from "../assets/images/augmeet.jpg"
+import octmeet from "../assets/images/octmeet.jpg"
 
 const { t } = useI18n()
 
@@ -72,7 +74,23 @@ const events = ref([
     date: '2026-07-07',
     location: 'Online Meetup',
     description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
-    image: onlinemeetup3
+    image: julymeetup
+  },
+  {
+    id: 7,
+    title: 'VueVerse Global Connect 4',
+    date: '2026-08-28',
+    location: 'Online Meetup',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: augmeet
+  },
+  {
+    id: 8,
+    title: 'VueVerse Offline Connect',
+    date: '2026-10-10',
+    location: 'T-Hub Phase 2, Hyderabad',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: octmeet
   }
 ])
 

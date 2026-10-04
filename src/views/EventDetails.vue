@@ -100,13 +100,31 @@ import nerandoposter from '../assets/images/nerandoposter.jpg'
 import yusufposter from '../assets/images/yusufposter.jpg'
 
 import onlinemeetup2 from '../assets/images/onlinemeetup2.jpg'
-import onlinemeetup3 from '../assets/images/onlinemeetup3.png'
+
 import evyatar from '../assets/images/evyatar.jpg'
 import rayan from '../assets/images/rayan.jpg'
 import nicodevs from '../assets/images/nicodevs.png'
 import faris from '../assets/images/faris.jpg'
 import evyatarmeet from '../assets/images/evyatarmeet.jpeg'
 import rayanmeet from '../assets/images/rayanmeet.jpeg'
+
+import julymeet from "../assets/images/julymeet.jpg"
+import july1 from "../assets/images/july1.jpg"
+import july2 from "../assets/images/july2.jpg"
+import july3 from "../assets/images/july3.jpg"
+import july4 from "../assets/images/july4.jpg"
+
+import augmeet from "../assets/images/augmeet.jpg"
+import aug1 from "../assets/images/aug1.jpg"
+import aug2 from "../assets/images/aug2.jpg"
+import aug3 from "../assets/images/aug3.jpg"
+import aug4 from "../assets/images/aug4.jpg"
+import aug5 from "../assets/images/aug5.jpg"
+import aug6 from "../assets/images/aug6.jpg"
+
+import octmeet from "../assets/images/octmeet.jpg"
+import oct1 from "../assets/images/oct1.jpg"
+import oct2 from "../assets/images/oct2.jpg"
 
 const route = useRoute()
 // const router = useRouter()
@@ -379,9 +397,13 @@ const events = ref<Event[]>([
     date: '2026-07-07',
     location: 'Online Meetup',
     description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
-    image: onlinemeetup3,
+    image: julymeet,
     images: [
-      onlinemeetup3,
+      julymeet,
+      july1,
+      july2,
+      july3,
+      july4,
     ],
     speakers: [
         {
@@ -400,14 +422,56 @@ const events = ref<Event[]>([
             image: nicodevs,
             social: 'https://www.linkedin.com/in/nicodevs/'
         },
+    ]
+  },
+  {
+    id: 7,
+    title: 'VueVerse Global Connect 4',
+    date: '2026-08-28',
+    location: 'Online Meetup',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: augmeet,
+    images: [
+      aug1,
+      aug2,
+      aug3,
+      aug4,
+      aug5,
+      aug6
+    ],
+    speakers: [
         {
-            id: 3,
-            name: 'Looking for Speakers',
-            title: 'Looking for Speakers',
-            description: 'We are looking for speakers for our upcoming VueVerse Global Connect 3 event. If you have expertise in Vue.js, frontend development, or related topics and would like to share your knowledge with our community, please reach out to us!',
-            image: onlinemeetup3,
-            social: ''
+            id: 1,
+            name: 'Florian Heuberger',
+            title: 'No Server, No Chromium, No Java: Invoices in pure TypeScript with Vue',
+            description: 'Another PDF generation library? No. jasy is 100% pure TypeScript. No WASM. No Java. No headless Chromium on your server. You write PDFs the way you write components - declarative, typed, composable.',
+            image: aug1,
+            social: 'https://www.linkedin.com/in/florian-heuberger-93700b166'
         },
+        {
+            id: 2,
+            name: 'Venkat Subash',
+            title: 'You write .vue & The Browser runs JavaScript. What happens in between?',
+            description: 'We write .vue files every day, but what actually happens between writing a Vue component and seeing it run in the browser?',
+            image: aug2,
+            social: 'https://www.linkedin.com/in/vvsu'
+        },
+    ]
+  },
+  {
+    id: 8,
+    title: 'VueVerse Offline Connect',
+    date: '2026-10-10',
+    location: 'T-Hub Phase 2, Hyderabad',
+    description: 'We\'re bringing together developers from across the world on one platform to connect, learn, and grow together.',
+    image: octmeet,
+    images: [
+      octmeet,
+      oct1,
+      oct2
+    ],
+    speakers: [
+        
     ]
   }
 ])
