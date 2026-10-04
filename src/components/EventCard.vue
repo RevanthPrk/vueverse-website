@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
+// import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 
 interface EventProps {
@@ -15,7 +15,7 @@ interface EventProps {
 }
 
 const props = defineProps<EventProps>()
-const { t } = useI18n()
+// const { t } = useI18n()
 const router = useRouter()
 
 // Format date for display
